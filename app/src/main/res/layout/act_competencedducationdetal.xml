@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/competencedducationdetal_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:src="@mipmap/icon_mygrowth_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="素质课堂"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dip_10"
+            android:src="@mipmap/icon_fen" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_shaij" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_qi"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="诸暨文莱教育"
+                android:textSize="@dimen/fond_12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_dw"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="诸暨市万达广场"
+                android:textSize="@dimen/fond_12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dip_5"
+            android:drawableLeft="@mipmap/icon_jin"
+            android:drawablePadding="@dimen/dip_5"
+            android:text="认证企业"
+            android:textColor="@color/movem_color"
+            android:textSize="@dimen/fond_14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_80"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7小时前"
+                android:textSize="@dimen/fond_12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_see"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="134444"
+                android:textSize="@dimen/fond_12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_200"
+        android:layout_marginLeft="@dimen/dip_5"
+        android:layout_marginRight="@dimen/dip_5"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_cc" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_5"
+        android:layout_marginRight="@dimen/dip_5"
+        android:text="简介：中国工程院2017夺肝肝肝会肝仍需肝会仍需仍需地肝肝圾脍仍需肝地脸会仍需肝肝会仍需仍需脍仍需仍需仍需人" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dip_5">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_ds" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:src="@mipmap/icon_gz" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:src="@mipmap/icon_sc" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dip_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip_10"
+                android:drawableLeft="@mipmap/icon_pl"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="532" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_zhan"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="5032" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/competencedducationdetal_back_Mystudy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/btn_bg_normal11"
+        android:paddingBottom="@dimen/dip_5"
+        android:paddingLeft="@dimen/dip_10"
+        android:paddingRight="@dimen/dip_10"
+        android:paddingTop="@dimen/dip_5"
+        android:text="我想学学"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fond_12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_40">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/dip_30"
+                android:layout_height="@dimen/dip_30"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_hader"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="0dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="蒙受欧"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="蒙欧"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dip_5"
+                android:text="1205"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/fond_12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dip_5"
+                android:src="@mipmap/icon_zan" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dip_5"
+                android:src="@mipmap/icon_mesage" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_40"
+        android:text="d在 脍会仍需仍需仍需仍需仍需仍需仍需仍需会仍需仍需仍需会"
+        android:textSize="@dimen/fond_14sp" />
+
+    <ImageView
+        android:layout_width="@dimen/dip_40"
+        android:layout_height="@dimen/dip_40"
+        android:layout_marginLeft="@dimen/dip_40"
+        android:layout_marginTop="@dimen/dip_5"
+        android:background="@color/white_yellow" />
+
+    <TextView
+        android:id="@+id/competencedducationdetal_back_pinlun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableBottom="@mipmap/icon_geng"
+        android:drawablePadding="@dimen/dip_5"
+        android:text="更多评论" />
+
+    <ImageView
+        android:layout_marginTop="@dimen/dip_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_zwt" />
+</LinearLayout>

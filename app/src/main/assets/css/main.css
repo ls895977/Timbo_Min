@@ -1,0 +1,469 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+}
+.swiper-slide {
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.banner_img a{
+    width:100%;
+    display:block;
+}
+.banner_img img{
+    width:100%;
+}
+/*导览页*/
+.page{
+    width:100%;
+    height:100%;
+    max-width:768px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.p-c{
+	background: #b6d1f1;
+	height: 100%;
+}
+.bg_page{
+    width:100%;
+    height:100%;
+    background:url(../images/BG.jpg) no-repeat;
+    background-size:100% auto;
+}
+.loginPage,.registerPage{
+    width:90%;
+    margin:0 auto;
+}
+.username_title{
+    height:4rem;
+    line-height: 4rem;
+	margin-top: 50px;
+}
+.title{
+    font-family:"黑体";
+    font-weight: 600;
+}
+.username_title h2{
+    font-weight:500;
+    text-align:center;
+    color:#fff;
+    font-size:1.6rem;
+}
+.login_wrap{
+	margin-top: 20px;
+}
+.login_wrap .input_container,.register_wrap .in_box{
+    position: relative;
+    width: 100%;
+    height:4rem;
+    line-height:3rem;
+    overflow: hidden;
+    padding:0.5rem 0.8rem;
+    background-color: #fff;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius:5px;
+}
+.in_box_fl{
+	background: #fff;
+	border-radius:5px;
+	padding: 0 0.8rem;
+}
+.login_wrap .input_container input{
+	font-size: 14px;
+}
+
+.login_wrap .input_container>div {
+    position: absolute;
+    width: 3rem;
+    display: inline-block;
+    text-align: left;
+    font-size:1.4rem;
+    color:#010000;
+}
+.login_wrap .input_container .username,.login_wrap .input_container .password{
+    width: 100%;
+    height:3rem;
+    border:none;
+    box-sizing: border-box;
+    outline: none;
+}
+.loginPage .other_login a{
+    margin:0 1rem;
+}
+.loginPage .other_login a:first-child{
+    color:#3eb135;
+}
+.loginPage .other_login a:last-child{
+    color:#4dafea;
+}
+.loginPage .other_login a span{
+    font-size:3rem;
+}
+
+/*忘记密码*/
+.forget_container{
+    height:2rem;
+    line-height:2rem;
+    text-align:right;
+    font-size:1.4rem;
+}
+.forget_container a{
+    color:#555;
+}
+.login_btn{
+	margin-top: 20px;
+    text-align:center;
+}
+.login_btn button{
+    color:#fff;
+    height:4.5rem;
+    line-height: 4.5rem;
+    background:#3eb135;
+    text-align:center;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    font-size:1.6rem;
+    letter-spacing: 10px;
+}
+.login_btn a{
+    height: 4rem;
+    line-height: 4rem;
+    font-size:1.4rem;
+    color:#78756d;
+}
+.code_btn{
+    position:absolute;
+    top: 12%;
+    right: 2%;
+    color:#fff;
+    height:3rem;
+    line-height: 3rem;
+    background:#f7941d;
+    text-align:center;
+    display:block;
+    border:none;
+    border-radius:3px;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+}
+/*身份注册*/
+.go_back{
+	height: 40px;
+	line-height: 40px;
+	margin-top: 15px;	
+}
+.go_back img{
+	width: 40px;
+	height: 40px;
+}	
+.go_back a{
+	color: #fff;
+	font-size:1.2rem;
+}
+.choose_ul{
+	margin: 60px auto 0;
+	width: 70%;
+}
+.choose_ul li{
+	margin-top: 40px;
+	
+}
+.choose_ul li a{
+	color:#fff;
+    height:4rem;
+    line-height: 4rem;
+    background:#3eb135;
+    text-align:center;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    font-size:1.6rem;
+    letter-spacing: 10px;
+}
+.choose_ul li a.a1{
+    background:#00a8e2;
+}
+.choose_ul li a.a2{
+    background:#ff9c2f;
+}
+.choose_ul li a.a3{
+    background:#94d600;
+}
+
+/*个人注册*/
+.head_top{
+    height:5rem;
+    line-height:5rem;
+}
+.head_top a{
+    text-align:center;
+    color:#fff;
+    font-size:1.2rem;
+}
+.register_wrap .in_box{
+    height:3rem;
+    padding: 0 0.8rem;
+}
+.register_wrap .in_box .user,.register_wrap .in_box .psd,.register_wrap .in_box .code,.register_wrap .in_box .edu{
+    width: 80%;
+    height:3rem;
+    border:none;
+    box-sizing: border-box;
+    outline: none;
+	
+}
+.register_wrap .in_box .code_btn{
+    top: 8%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+.register_wrap .searh_icon{
+    top: 0;
+    right: 2%;
+    color: #ffbe4c;
+    font-weight: 700;
+}
+.register_wrap .searh_icon span{
+    font-size:2.5rem;
+}
+
+
+.next_text{
+    line-height: 2.5rem;
+}
+.next_text a{
+    color:#49a9f1;
+}
+.next_text input[type='checkbox']{
+    width:1.5rem;
+    height:1.5rem;
+    border:2px solid #ffd996;
+    border-radius:5px;
+    position: relative;
+    top: 0.3rem;
+    background:#fff;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+}
+.next_text input[type='checkbox']:checked{
+    background:#fff url(../images/checked.png);
+    background-size: auto 100%;
+}
+.next_btn button{
+    color:#fff;
+    height:3rem;
+    line-height: 3rem;
+    text-align:center;
+    display: block;
+    border: none;
+    border-radius: 5px;
+}
+.bg_none{
+    background: none!important;
+}
+
+.registerPage .choose,.rel_ship select,.birthday select{
+    border: none;
+    height: 30px;
+    font-family: "Microsoft YaHei";
+    background: url(../images/down_icon.png) no-repeat scroll right center transparent;
+    background-size: auto 25%;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -moz-appearance: none;
+    margin-right: 5px;
+}
+.sex_choose label{
+    height:3rem;
+    line-height: 3rem;
+    font-size:1.5rem;
+    color: #373737;
+}
+.sex_choose input[type='radio']{
+    width:1.5rem;
+    height:1.5rem;
+    border:1px solid #49a9f1;
+    border-radius:50%;
+    background:#fff;
+    outline: none;
+    position: relative;
+    top: 3px;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -moz-appearance: none;
+}
+.sex_choose input[type='radio']:checked{
+    background:url(../images/checked_1.png);
+    background-size: auto 100%;
+}
+.box{
+    padding: 0!important;
+}
+.rel_ship,.rel_in{
+    box-sizing:border-box ;
+    padding:0 0.8rem;
+    background:#fff;
+    border-radius: 5px;
+}
+.rel_in input{
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+.fileinput{
+    display: inline-block;
+    overflow: hidden;
+}
+.fileinput .file{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height:3rem;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+}
+.fileinput img{
+    width:65% ;
+}
+.alert_box{
+    width:70%;
+    min-height:3rem;
+    position:absolute ;
+    left: 50%;
+    top: 50%;
+    margin-left: -35%;
+    border-radius: 5px;
+    background:rgba(0,0,0,0.8);
+    color:#fff;
+    display:none;
+    font-size:1.4rem;
+    line-height:3rem;
+    padding:0 1rem;
+    text-align:center ;
+    z-index:1000;
+}
+.register_wrap .searh_tb{
+    width: 2.5rem;
+    right: 5px;
+    top: 4px;
+}
+.register_wrap .verification{
+    padding: 3px 5px;
+    right: 5px;
+    top: 3px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    /*height: 3rem;*/
+    background: #ffbe4c;
+}
+.layer-bg{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+.layer-bg .layer-box{
+    width: 280px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -140px;
+    bottom: 10%;
+    background: #fff3d5;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.layer-bg .layer-box .text{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+.layer-bg .layer-box .text img{
+    width: 1.2rem;
+    position: relative;
+    top: 4px;
+}
+.layer-bg .layer-box .text a.btn{
+    color: #fff;
+    float: right;
+    display: inline-block;
+    background: #f9b641;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+.layer-bg .layer-box .item{
+    font-size: 1.4rem;
+}
+.layer-bg .layer-box .in input{
+    width: 40%;
+    height: 3.5rem;
+    background: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+}
+.layer-bg .layer-box .item button{
+    width: 100%;
+    height: 4rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.layer-bg .layer-box .create input{
+    width: 100%;
+    height: 4rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.layer-bg .layer-box .create img{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.blue{
+    background: #1976f3;
+}
+.gray{
+    background: #c4c4c4;
+}
+.yellow{
+    background: #f9b641;
+}
+
+
+@media screen and (min-width:320px) and (max-width:375px){
+    .birthday select{
+        margin-left:0.8rem;
+    }
+}
+@media screen and (min-width:375px) and (max-width:411px){
+    .birthday select{
+        margin-left:1rem;
+    }
+}
+@media screen and (min-width:411px) and (max-width:414px){
+    .birthday select{
+        margin-left:1.2rem;
+    }
+}
+@media screen and (min-width:414px) and (max-width:768px){
+    .birthday select{
+        margin-left:1.2rem;
+    }
+}

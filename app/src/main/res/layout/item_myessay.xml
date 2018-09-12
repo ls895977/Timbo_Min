@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dip_10"
+    android:background="@drawable/ques_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7/1日"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/icon_see"
+            android:drawablePadding="@dimen/dip_5"
+            android:gravity="right"
+            android:text="1247894"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_13sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:text="同时盯夺仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需仍需肝仍需仍需wefw彩云追月地仍需" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_pl"
+            android:drawablePadding="@dimen/dip_5"
+            android:gravity="right"
+            android:text="5532"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/icon_zhan"
+            android:drawablePadding="@dimen/dip_5"
+            android:gravity="right"
+            android:text="1205"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_13sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dip_5"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:orientation="horizontal">
+    //折扣卷
+    <LinearLayout
+        android:id="@+id/item_homelinear4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/item_homelinear1"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@mipmap/icon_tu1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="@dimen/dip_10"
+            android:text="折扣卷"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dip_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8.5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fond_25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:paddingLeft="@dimen/dip_2"
+                android:paddingTop="@dimen/dip_15"
+                android:text="折"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fond_12sp" />
+        </LinearLayout>
+    </LinearLayout>
+    //代金卷
+
+    <LinearLayout
+        android:id="@+id/item_homelinear2"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@mipmap/icon_tu2"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="@dimen/dip_10"
+            android:text="代金卷"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dip_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:paddingLeft="@dimen/dip_2"
+                android:paddingRight="@dimen/dip_5"
+                android:paddingTop="@dimen/dip_10"
+                android:text="¥"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fond_16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fond_25sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="@dimen/dip_5"
+            android:text="面值"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    //免费卷
+
+    <RelativeLayout
+        android:id="@+id/item_homelinear3"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@mipmap/icon_tu3"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="免费卷"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fond_22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="@dimen/dip_5">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dip_5">
+
+            <ImageView
+                android:layout_width="@dimen/dip_20"
+                android:layout_height="@dimen/dip_20"
+                android:background="@mipmap/icon_jjiaoyu1" />
+
+            <TextView
+                android:id="@+id/homecoupon_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="上海尚田教育"
+                android:textSize="@dimen/fond_14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_5"
+            android:paddingLeft="@dimen/dip_10"
+            android:textStyle="bold"
+            android:text="课 程：幼儿钢琴"
+            android:textSize="@dimen/fond_10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_5"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/dip_10"
+            android:text="地 址：万达广浦场中路2001号3楼208室"
+            android:textSize="@dimen/fond_10sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_5"
+            android:paddingLeft="@dimen/dip_10"
+            android:textStyle="bold"
+            android:text="生效期：2018-2-3     终止期：2018-5-30"
+            android:textSize="@dimen/fond_10sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

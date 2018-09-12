@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4">
+
+    <LinearLayout
+        android:id="@+id/basningsKillsItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dip_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dip_5">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/dip_30"
+                android:layout_height="@dimen/dip_30"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:src="@mipmap/icon_hader" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/dip_5"
+                android:textSize="@dimen/fond_12sp"
+                android:text="挑战者：刘晓萌"
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_150">
+
+            <ImageView
+                android:id="@+id/arena_button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_shaijineng" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dip_10"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:text="儿童才艺表演"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fond_14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/fond_12sp"
+                android:drawableLeft="@mipmap/icon_see"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="14565334" />
+
+            <TextView
+                android:id="@+id/basnngskills"
+                android:textSize="@dimen/fond_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/fond_12sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:layout_marginRight="@dimen/dip_10"
+                android:layout_toLeftOf="@+id/arenadetalzhan"
+                android:layout_toRightOf="@+id/basnngskills"
+                android:drawableLeft="@mipmap/icon_pl"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="532" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#f4f4f4"
+            android:layout_marginBottom="@dimen/dip_10"
+            android:layout_height="@dimen/dip_1" />
+    </LinearLayout>
+</RelativeLayout>

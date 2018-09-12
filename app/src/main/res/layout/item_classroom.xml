@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/mhealthageritem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/dip_5">
+
+            <ImageView
+                android:id="@+id/item_healthpagerlistimage"
+                android:layout_width="@dimen/dip_100"
+                android:layout_height="@dimen/dip_60"
+                android:layout_margin="@dimen/dip_5"
+                android:background="@mipmap/icon_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dip_30"
+                        android:layout_height="@dimen/dip_30"
+                        android:src="@mipmap/icon_homejigou" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip_5"
+                        android:text="吉他演奏"
+                        android:textSize="@dimen/fond_12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_16sp"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:text="国学教育免费试听" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dip_80"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:textSize="@dimen/fond_12sp"
+                    android:text="中国吃网餐饮网给大家做" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_1"
+            android:layout_marginBottom="@dimen/dip_5"
+            android:background="#f4f4f4" />
+    </LinearLayout>
+</RelativeLayout>

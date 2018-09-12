@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f4f4"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dip_60"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/votedetails_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dip_10"
+                    android:src="@mipmap/icon_mygrowth_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="投票"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dip_10"
+                    android:src="@mipmap/icon_fen" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dip_10"
+                android:text="诸暨2017儿童美术大赛"
+                android:textColor="@color/fond_cloer"
+                android:textSize="@dimen/fond_16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/votedetails_image"
+                    android:layout_width="@dimen/dip_60"
+                    android:layout_height="@dimen/dip_60"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/dip_10"
+                    android:layout_marginLeft="@dimen/dip_20"
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:background="@color/white"
+                    android:src="@mipmap/icon_homejigou" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/votedetails_image"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@mipmap/icon_jin"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:text="(5年)"
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/fond_16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dip_10"
+                android:text="举办单位：诸暨儿童教育联合会"
+                android:textColor="@color/fond_cloer"
+                android:textSize="@dimen/fond_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:text="开始时间2017-11-23日 12：30"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/fond_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:text="开始时间2017-11-23日 12：30"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/fond_14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dip_10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dip_30"
+                    android:text="评选规则：
+猜字游戏规则——学科竞赛——小学教育——教育专区。猜字游戏柜子" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/icon_down1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_1"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dip_10"
+                android:text="选手35名   总访问量25896"
+                android:textColor="@color/fond_cloer"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dip_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dip_15"
+                    android:layout_marginRight="@dimen/dip_10"
+                    android:drawableLeft="@mipmap/icon_down"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:text="人气" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dip_30"
+                    android:layout_marginLeft="@dimen/dip_20"
+                    android:layout_weight="11"
+                    android:background="@drawable/bt_arenaselect1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dip_10"
+                        android:src="@mipmap/icon_fa" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dip_15"
+                        android:background="@null" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dip_20"
+                        android:layout_height="@dimen/dip_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dip_5"
+                        android:src="@mipmap/icon_chaa" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dip_15"
+                    android:layout_marginRight="@dimen/dip_10"
+                    android:drawableLeft="@mipmap/icon_down"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:text="排名" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/votingdetails_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#f5f5f5"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tab_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/votingdetailsmessage"
+            android:gravity="center"
+            android:text="首页" />
+
+        <TextView
+            android:id="@+id/tab_follow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/follow"
+            android:gravity="center"
+            android:text="关注"
+            android:textColor="@drawable/fond_selecte" />
+
+        <TextView
+            android:id="@+id/tab_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/message"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@drawable/fond_selecte" />
+
+        <TextView
+            android:id="@+id/tab_member"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/member"
+            android:gravity="center"
+            android:text="排名"
+            android:textColor="@drawable/fond_selecte" />
+    </LinearLayout>
+
+</RelativeLayout>

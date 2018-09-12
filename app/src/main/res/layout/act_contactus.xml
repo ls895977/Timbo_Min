@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/contactus_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:src="@mipmap/icon_mygrowth_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="联系我们"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dip_10"
+            android:src="@mipmap/icon_fen" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="@dimen/dip_10"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:padding="@dimen/dip_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="汽车后市场招商加盟" />
+
+        <TextView
+            android:padding="@dimen/dip_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="联系人：赵子涵" />
+
+        <TextView
+            android:padding="@dimen/dip_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="电话/Tel:010-53949134" />
+
+        <TextView
+            android:padding="@dimen/dip_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="ZHAOZHIHAN" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/dip_10"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:padding="@dimen/dip_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="汽车后市场招商加盟" />
+
+        <TextView
+            android:padding="@dimen/dip_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="联系人：赵子涵" />
+
+        <TextView
+            android:padding="@dimen/dip_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="电话/Tel:010-53949134" />
+
+        <TextView
+            android:padding="@dimen/dip_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="ZHAOZHIHAN" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/dip_10"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:padding="@dimen/dip_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="汽车后市场招商加盟" />
+
+        <TextView
+            android:padding="@dimen/dip_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="联系人：赵子涵" />
+
+        <TextView
+            android:padding="@dimen/dip_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="电话/Tel:010-53949134" />
+
+        <TextView
+            android:padding="@dimen/dip_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="ZHAOZHIHAN" />
+    </LinearLayout>
+</LinearLayout>

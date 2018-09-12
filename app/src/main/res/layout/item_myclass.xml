@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/dip_10"
+    android:background="@drawable/boder_myclass"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dip_10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/dip_35"
+                android:layout_height="@dimen/dip_45"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:src="@mipmap/icon_hader" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:text="董美丽" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="一小时前" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_myclass_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_160"
+        android:background="@mipmap/icon_d1">
+
+        <TextView
+            android:id="@+id/item_myclass_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dip_40"
+            android:text="运动"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fond_25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_myclass_title"
+            android:layout_marginLeft="@dimen/dip_160"
+            android:layout_marginTop="@dimen/dip_10"
+            android:text="得美丽完成了运动计划"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fond_16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/dip_5"
+            android:layout_height="wrap_content"
+            android:text="评论" />
+
+        <TextView
+            android:id="@+id/arenadetaill_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dip_20"
+            android:layout_toLeftOf="@+id/arenadetalzhan"
+            android:drawableLeft="@mipmap/icon_pl"
+            android:drawablePadding="@dimen/dip_5"
+            android:text="532" />
+        <TextView
+            android:id="@+id/arenadetalzhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@mipmap/icon_zhan"
+            android:drawablePadding="@dimen/dip_5"
+            android:text="1205" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/dip_35"
+            android:layout_height="@dimen/dip_45"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_5"
+            android:src="@mipmap/icon_hader" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/dip_5"
+            android:text="刘二萌    10岁"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/fond_14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_200"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_excellenttitle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dip_10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:drawableLeft="@mipmap/icon_mesage"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="532" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dip_10"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:drawableLeft="@mipmap/icon_see"
+            android:drawablePadding="@dimen/dip_5"
+            android:text="532" />
+    </RelativeLayout>
+</LinearLayout>

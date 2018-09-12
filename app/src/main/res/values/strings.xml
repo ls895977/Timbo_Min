@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">小树藤</string>
+    <string name="start">开始体验</string>
+    <string name="healthPage_tilte">成长咨询</string>
+    <string name="mygrowth_title">我的成长</string>
+    <string name="MyEssayDetails_title">我的随笔</string>
+    <string name="Act_Sign_title"></string>
+    <string name="Comment_Details_title">评论</string>
+    <string name="Arena_title">PK晋级场</string>
+    <string name="BasningsKills_title">晒技能</string>
+    <string name="font_type">微软雅黑</string>
+</resources>

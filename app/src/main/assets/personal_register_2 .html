@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="wap-font-scale" content="no">
+    <title>熊孩子成长记</title>
+    <link rel="stylesheet" href="css/swiper.3.3.1.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/YMDClass.mini.js"></script>
+    <script src="js/personal_register_2.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="page p-r">
+        <div class="bg_page">
+            <div class="head_top over">
+                <div class="fl w20">
+                    <a class="w100 b_block" href=""><img class="p-top10 w60" src="images/back_to.png" alt=""></a>
+                </div>
+                <div class="fr w20">
+                    <a class="w100 b_block" href="enterprise_register_1%20.html">企业注册</a>
+                </div>
+            </div>
+            <div class="registerPage">
+                <div class="username_title w100 title">
+                    <h2>完善资料</h2>
+                </div>
+                <div class="register_wrap w100">
+                    <div class="in_box m-b15">
+                        <input name="name" class="user" type="text" value="" placeholder="输入孩子姓名">
+                    </div>
+                    <div class="in_box m-b15 bg_none sex_choose">
+                        <label class="m-r-3" for=""><input class="m-r-1" type="radio" name="sex">男</label>
+                        <label for=""><input class="m-r-1" type="radio" name="sex">女</label>
+                    </div>
+                    <div class="in_box m-b15 birthday">
+                        <span>孩子生日</span>
+                        <select class="w20" name="year1"></select>
+                        <select class="w20" name="month1"></select>
+                        <select class="w20" name="day1"></select>
+                    </div>
+                    <div class="in_box m-b15 over bg_none box">
+                        <div class="w48 fl rel_ship bg-white">
+                            <select class="w100" name="relShip_1">
+                                <option value="">与孩子关系</option>
+                                <option value="">父子</option>
+                                <option value="">母子</option>
+                            </select>
+                        </div>
+                        <div class="w48 fr rel_in bg-white">
+                            <input name="parents_1" class="w100" type="text" value="" placeholder="家长姓名"/>
+                        </div>
+                    </div>
+                    <div class="in_box m-b15 over bg_none box">
+                        <div class="w48 fl rel_ship bg-white">
+                            <select class="w100" name="relShip_2" id="">
+                                <option value="">与孩子关系</option>
+                                <option value="">父子</option>
+                                <option value="">母子</option>
+                            </select>
+                        </div>
+                        <div class="w48 fr rel_in bg-white">
+                            <input name="parents_2" class="w100" type="text" value="" placeholder="家长姓名"/>
+                        </div>
+                    </div>
+                    <div class="next_btn w100">
+                        <button class="w100 bg-blue">下一步</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert_box"></div>
+    </div>
+    <script>
+        new YMDselect('year1','month1','day1');
+    </script>
+</body>
+</html>

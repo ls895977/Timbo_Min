@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dip_20">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/location_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:src="@mipmap/icon_mygrowth_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="GPS定位跟随中"
+                android:textColor="@color/fond_cloer"
+                android:textSize="@dimen/fond_18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/tracing_mapView"
+        android:layout_marginRight="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginBottom="@dimen/dip_100"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/dip_60"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/location_click1s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dip_20"
+        android:layout_marginLeft="@dimen/dip_80"
+        android:layout_marginRight="@dimen/dip_80"
+        android:layout_marginTop="@dimen/dip_40"
+        android:background="@drawable/bt_growthrecord_details"
+        android:gravity="center_horizontal"
+        android:text="返回计数器"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fond_18sp" />
+</RelativeLayout>

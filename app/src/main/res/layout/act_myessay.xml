@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/myessay_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:src="@mipmap/icon_mygrowth_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的随笔"
+            android:textSize="@dimen/fond_18sp" />
+    </RelativeLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/myEssay_hader"
+        android:layout_width="@dimen/dip_60"
+        android:layout_height="@dimen/dip_60"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dip_60"
+        android:src="@mipmap/icon_hader" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dip_5"
+        android:text="刘晓萌"
+        android:textColor="@color/fond_cloer"
+        android:textSize="@dimen/fond_16sp" />
+
+    <ImageView
+        android:layout_width="@dimen/dip_80"
+        android:layout_height="@dimen/dip_80"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/icon_xiangji" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_2"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_60"
+        android:background="#efefef"
+        android:minLines="6" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="擂主说明"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_2"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:background="#efefef" />
+
+    <TextView
+        android:layout_marginTop="@dimen/dip_60"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:background="@drawable/bt_growthrecord_details"
+        android:gravity="center_horizontal"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fond_18sp" />
+</LinearLayout>
+

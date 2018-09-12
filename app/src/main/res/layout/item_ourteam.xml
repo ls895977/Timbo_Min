@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dip_5"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_200"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_xoxo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dip_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王小明"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_22sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dip_10"
+            android:drawablePadding="@dimen/dip_5"
+            android:text="英语教师" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="@dimen/dip_10"
+        android:text="毕业于北京大学，1992年参加工作从业20年"
+        android:layout_height="wrap_content" />
+</LinearLayout>

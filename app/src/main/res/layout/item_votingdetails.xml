@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dip_1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_45">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/dip_35"
+                    android:layout_height="@dimen/dip_35"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:src="@mipmap/icon_hader" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dip_5"
+                        android:text="刘二萌"
+                        android:textSize="@dimen/fond_12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dip_5"
+                        android:paddingTop="@dimen/dip_5"
+                        android:text="浙江省诸暨市  8岁  二年纪"
+                        android:textSize="@dimen/fond_12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/dip_5"
+                android:drawableLeft="@mipmap/icon_see"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="1234124124" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_150"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_pdpdy" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dip_10">
+
+            <TextView
+                android:id="@+id/votingdetails_pinglun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip_5"
+                android:text="评论" />
+
+            <TextView
+                android:id="@+id/votingdetails_pinglun1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip_20"
+                android:layout_toRightOf="@+id/votingdetails_pinglun"
+                android:drawableLeft="@mipmap/icon_pl"
+                android:drawablePadding="@dimen/dip_5"
+                android:paddingLeft="@dimen/dip_10"
+                android:text="532" />
+
+            <TextView
+                android:id="@+id/arenadetalzhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@mipmap/icon_zhan"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="1205" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

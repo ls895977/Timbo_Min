@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dip_10"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/latestactivities_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:src="@mipmap/icon_mygrowth_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="最新活动"
+                android:textColor="@color/fond_cloer"
+                android:textSize="@dimen/fond_18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dip_10"
+                android:src="@mipmap/icon_fen" />
+        </RelativeLayout>
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/latestactivities_xrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff5d1">
+
+            <TextView
+                android:id="@+id/tab_lateshome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/home"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dip_5"
+                android:paddingLeft="@dimen/dip_20"
+                android:paddingRight="@dimen/dip_20"
+                android:paddingTop="@dimen/dip_5"
+                android:text="首页"
+                android:textColor="@drawable/fond_selecte" />
+
+            <TextView
+                android:id="@+id/tab_latestmember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableTop="@drawable/member"
+                android:paddingBottom="@dimen/dip_5"
+                android:paddingLeft="@dimen/dip_20"
+                android:paddingRight="@dimen/dip_20"
+                android:paddingTop="@dimen/dip_5"
+                android:text="会员"
+                android:textColor="@drawable/fond_selecte" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tab_zhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dip_10"
+        android:drawableRight="@drawable/zhong"
+        android:gravity="center"
+        android:padding="@dimen/dip_14"
+        android:paddingBottom="@dimen/dip_10" />
+
+    <TextView
+        android:id="@+id/releaseactivities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dip_20"
+        android:gravity="center"
+        android:padding="@dimen/dip_14"
+        android:paddingBottom="@dimen/dip_10"
+        android:text="发布\n活动"
+        android:textColor="#af8d46" />
+</RelativeLayout>

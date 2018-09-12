@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/beijing"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dip_80"
+        android:text="用户登录"
+        android:textColor="@color/mycolor"
+        android:textSize="@dimen/dip_20" />
+    <EditText
+        android:id="@+id/login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_20"
+        android:background="@drawable/shape_corner"
+        android:hint="账号"
+        android:inputType="number"
+        android:padding="@dimen/dip_5"
+        android:text="15708319320" />
+    <EditText
+        android:id="@+id/login_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/shape_corner"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:padding="@dimen/dip_5"
+        android:text="123456" />
+
+    <TextView
+        android:id="@+id/ForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/dip_20"
+        android:padding="@dimen/dip_10"
+        android:text="忘记密码?" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_40"
+        android:layout_margin="@dimen/dip_20"
+        android:background="@drawable/btn_selector"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fond_16sp" />
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:text="立即注册"
+        android:textSize="@dimen/fond_16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dip_40"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/weixin" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:src="@mipmap/qq" />
+    </LinearLayout>
+</LinearLayout>

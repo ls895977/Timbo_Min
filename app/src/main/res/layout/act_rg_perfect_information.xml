@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/beijing"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dip_15">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/rgper_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_15"
+            android:src="@mipmap/back_icon" />
+
+        <TextView
+            android:id="@+id/rgper_enterprise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dip_10"
+            android:padding="@dimen/dip_15"
+            android:text="企业注册"
+            android:textColor="@color/mycolor"
+            android:textSize="@dimen/fond_14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dip_20"
+        android:text="完善资料"
+        android:textColor="@color/mycolor"
+        android:textSize="@dimen/dip_20" />
+
+    <EditText
+        android:id="@+id/information_real_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_20"
+        android:background="@drawable/shape_corner"
+        android:hint="输入孩子姓名"
+        android:padding="@dimen/dip_10"
+        android:textSize="@dimen/fond_14sp" />
+
+    <RadioGroup
+        android:id="@+id/information_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_30"
+        android:layout_marginTop="@dimen/dip_10"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_20"
+            android:text="女" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/information_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/shape_corner"
+        android:hint="输入孩子年龄"
+        android:inputType="number"
+        android:padding="@dimen/dip_10"
+        android:textSize="@dimen/fond_14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/shape_corner"
+        android:orientation="horizontal"
+        android:padding="@dimen/dip_5">
+
+        <EditText
+            android:id="@+id/information_address"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@color/white"
+            android:hint="居住地址"
+            android:paddingLeft="@dimen/dip_5"
+            android:textSize="@dimen/fond_14sp" />
+
+        <ImageView
+            android:layout_width="@dimen/dip_25"
+            android:layout_height="@dimen/dip_25"
+            android:background="@mipmap/ditutubiao"
+            android:padding="@dimen/dip_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_10"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Child_relationship1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner"
+            android:drawableRight="@mipmap/down_icon"
+            android:hint="与孩子关系"
+            android:padding="@dimen/dip_10"
+            android:textSize="@dimen/fond_14sp" />
+
+        <EditText
+            android:id="@+id/Child_relationship_name1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner"
+            android:hint="家长姓名"
+            android:padding="@dimen/dip_10"
+            android:textSize="@dimen/fond_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_10"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Child_relationship2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner"
+            android:drawableRight="@mipmap/down_icon"
+            android:hint="与孩子关系"
+            android:padding="@dimen/dip_10"
+            android:textSize="@dimen/fond_14sp" />
+
+        <EditText
+            android:id="@+id/Child_relationship_name2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner"
+            android:hint="家长姓名"
+            android:padding="@dimen/dip_10"
+            android:textSize="@dimen/fond_14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rg_next_step"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_40"
+        android:layout_margin="@dimen/dip_20"
+        android:background="@drawable/btn_registerselector"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fond_16sp" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">@color/main_color</color>
+    <color name="main_color">#5CB88C</color>
+    <color name="mycolor">#000000</color>
+    <color name="yellow">#e6a900</color>
+    <color name="gray">#b1b1b1</color>
+    <color name="gray1">#e0e0e0</color>
+    <color name="fond_cloer">#464646</color>
+    <color name="movem_color">#fd6b38</color>
+    <color name="arena_color">#5447b1</color>
+    <color name="colco1">#94d529</color>
+    <color name="colco2">#fa561f</color>
+    <color name="colco3">#1bacc7</color>
+</resources>

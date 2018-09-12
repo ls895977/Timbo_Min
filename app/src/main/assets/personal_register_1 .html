@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="wap-font-scale" content="no">
+    <title>熊孩子成长记</title>
+    <link rel="stylesheet" href="css/swiper.3.3.1.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/personal_register.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="page p-r">
+        <div class="bg_page">
+            <div class="head_top over">
+                <div class="fl w20">
+                    <a class="w100 b_block" href=""><img class="p-top10 w60" src="images/back_to.png" alt=""></a>
+                </div>
+                <div class="fr w20">
+                    <a class="w100 b_block" href="enterprise_register_1%20.html">企业注册</a>
+                </div>
+            </div>
+            <div class="registerPage">
+                <div class="username_title w100 title">
+                    <h2>账号注册</h2>
+                </div>
+                <form action="" class="accoutRegister">
+                    <div class="register_wrap w100">
+                        <div class="in_box m-b15">
+                            <input name="mobile" maxlength="11" class="user" type="text" value="" placeholder="请输入手机号">
+                        </div>
+                        <div class="in_box m-b15">
+                            <input name="code" type="text" class="code" value="" placeholder="请输入验证码">
+                            <button class="code_btn">发送验证码</button>
+                        </div>
+                        <div class="in_box m-b15">
+                            <input name="password" type="password" class="psd" value="" placeholder="请设置密码">
+                        </div>
+                        <div class="in_box m-b15">
+                            <select class="choose w30" name="province" id="province"></select>
+                            <select class="choose w30" name="city" id="city"></select>
+                            <select class="choose w30" name="area" id="area"></select>
+                        </div>
+                        <div class="in_box m-b15 p-r over">
+                            <input name="schoolName" type="text" class="psd p-r-2" value="" placeholder="请输入学校名称">
+                            <a href="" class="p-a searh_icon"><span class="iconfont icon-sousuo"></span></a>
+                        </div>
+                        <div class="next_btn w100">
+                            <button class="next w100 bg-blue">下一步</button>
+                        </div>
+                        <div class="next_text t-cen p-top10">
+                            <p>点击上面“下一步”按钮，即代表你同意</p>
+                            <p><label><input class="agree" checked="checked" type="checkbox"/></label><a href="" class="">《用户服务协议》</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="alert_box"></div>
+    </div>
+    <script src="js/PCASClass.js"></script>
+    <script>
+        new PCAS("province","city","area","","","");
+    </script>
+</body>
+</html>

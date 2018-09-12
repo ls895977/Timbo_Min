@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dip_20">
+
+        <ImageView
+            android:id="@+id/MyTeacher_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:src="@mipmap/icon_hui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/dip_10"
+            android:text="我的老师"
+            android:textSize="@dimen/fond_18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dip_10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/dip_30"
+                android:layout_height="@dimen/dip_30"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:layout_marginTop="@dimen/dip_5"
+                android:src="@mipmap/icon_touxaing" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:text="王老师"
+                android:textSize="@dimen/fond_14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2018.1.23"
+            android:textSize="@dimen/fond_10sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_5"
+        android:layout_marginRight="@dimen/dip_5"
+        android:layout_marginTop="@dimen/dip_10"
+        android:padding="@dimen/dip_10"
+        android:text="学生的作业是教学的酸奶有学生的作业是教学的酸奶有学生的作业是教学的酸奶有学生的作业是教学的酸奶有学生的作业是教学的酸奶有学生的作业是教学的酸奶有学生的作业是教学的酸奶有学生的作业是教学的酸奶有学生的作业是教学的酸奶有学生的作业是教学的酸奶有"
+        android:textSize="@dimen/fond_12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dip_10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_xxx" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="任务认领情况" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_1"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="#f4f4f4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="@color/movem_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人领取" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textColor="@color/movem_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未人领取" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="@color/movem_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人完成" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textColor="@color/movem_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人未完成" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dbfaff"
+        android:paddingBottom="@dimen/dip_5"
+        android:paddingTop="@dimen/dip_5"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="姓名" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="认领时间" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="完成时间" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/dip_30"
+                android:layout_height="@dimen/dip_30"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:layout_marginTop="@dimen/dip_5"
+                android:src="@mipmap/icon_touxaing" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:text="王晓瑞"
+                android:textSize="@dimen/fond_14sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:gravity="center"
+            android:text="2017-2-3 3：20"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:gravity="center"
+            android:text="2017-2-3 3：20"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

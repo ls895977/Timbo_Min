@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="wap-font-scale" content="no">
+    <title>熊孩子成长记</title>
+    <link rel="stylesheet" href="css/swiper.3.3.1.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/YMDClass.mini.js"></script>
+    <script src="js/personal_register_2.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="page p-r">
+        <div class="bg_page">
+            <div class="head_top over">
+                <div class="fl w20">
+                    <a class="w100 b_block" href=""><img class="p-top10 w60" src="images/back_to.png" alt=""></a>
+                </div>
+                <div class="fr w20">
+                    <a class="w100 b_block" href="enterprise_register_1%20.html">企业注册</a>
+                </div>
+            </div>
+            <div class="registerPage">
+                <div class="username_title w100 title">
+                    <h2>设置账号</h2>
+                </div>
+                <div class="register_wrap w100">
+                    <div class="in_box m-b15">
+                        <input name="name" class="user" type="text" value="" placeholder="输入手机号">
+                    </div>
+                    <div class="in_box m-b15 p-r">
+                        <input name="name" style="width: 60%;" class="user" type="text" value="" placeholder="输入验证码">
+                        <button class="verification p-a">发送验证码</button>
+                    </div>
+                    <div class="in_box m-b15">
+                        <input name="name" class="user" type="password" value="" placeholder="设置密码">
+                    </div>
+                    <div class="in_box m-b15 birthday">
+                        <select class="choose w25" name="province" id="province"></select>
+                        <select class="choose w25" name="city" id="city"></select>
+                        <select class="choose w25" name="area" id="area"></select>
+                    </div>
+                    <div class="in_box m-b15 p-r">
+                        <input name="school" class="user" type="text" value="" placeholder="请输入学校名称">
+                        <img class="searh_tb p-a" src="images/searh_icon.png" alt=""/>
+                    </div>
+                    <div class="next_btn w100">
+                        <button class="w100 bg-blue">下一步</button>
+                    </div>
+                    <div class="next_text t-cen p-top10">
+                        <p>点击上面“下一步”按钮，即代表你同意</p>
+                        <p><label><input checked="checked" class="agree" type="checkbox"></label><a href="" class="">《企业服务协议》</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert_box"></div>
+        <div class="layer-bg">
+            <div class="layer-box">
+                <div class="item m-b10 text">
+                    <img src="images/red_map.png" alt="">
+                    <span>诸暨市第一小学</span>
+                </div>
+                <div class="item m-b10 p-l-1">
+                    <span>请选择班级</span>
+                </div>
+                <div class="item m-b10 in">
+                    <label for="year"><input type="text" id="year">年</label>
+                    <label for="level"><input type="text" id="level">级</label>
+                </div>
+                <div class="item m-b10">
+                    <button class="yellow">查询班级</button>
+                </div>
+                <div class="item m-b10">
+                    <button class="gray">我要加入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/PCASClass.js"></script>
+    <script>
+        new PCAS("province","city","area","","","");
+    </script>
+</body>
+</html>

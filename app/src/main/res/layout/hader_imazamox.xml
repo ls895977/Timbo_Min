@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/dip_10"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:orientation="horizontal"
+        android:padding="@dimen/dip_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金豆余额:8500" />
+
+        <TextView
+            android:id="@+id/imazamox_Rechargeofgoldbean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:background="@drawable/imazamox_tv1"
+            android:text="充值"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fond_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:orientation="horizontal"
+        android:padding="@dimen/dip_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金豆余额:8500" />
+
+        <TextView
+            android:id="@+id/imazamox_ExtractionOfGoldBean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:background="@drawable/imazamox_tv2"
+            android:text="体现"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fond_12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/imazamox_tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dip_5"
+                android:background="@drawable/integral_select"
+                android:text="全部"
+                android:textColor="@drawable/tv_clolor" />
+
+            <TextView
+                android:id="@+id/imazamox_tv_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dip_5"
+                android:background="@drawable/integral_select"
+                android:text="收入"
+                android:textColor="@drawable/tv_clolor" />
+
+            <TextView
+                android:id="@+id/imazamox_tv_expenditure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dip_5"
+                android:background="@drawable/integral_select"
+                android:text="支出"
+                android:textColor="@drawable/tv_clolor" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

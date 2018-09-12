@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="知识分享/或者提问"
+        android:textColor="@color/fond_cloer"
+        android:textSize="@dimen/fond_18sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@mipmap/icon_hader" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dip_10"
+        android:text="萌萌"
+        android:textColor="@color/fond_cloer" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:background="@drawable/fillet"
+        android:orientation="horizontal"
+        android:padding="@dimen/dip_10">
+
+        <TextView
+            android:id="@+id/xin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="*"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_5"
+            android:layout_toRightOf="@id/xin1"
+            android:text="分类"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="请选择"
+            android:textColor="@color/gray1"
+            android:textSize="@dimen/fond_16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_down" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_5"
+        android:background="@drawable/fillet"
+        android:orientation="horizontal"
+        android:padding="@dimen/dip_10">
+
+        <TextView
+            android:id="@+id/xin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="*"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_5"
+            android:layout_toRightOf="@id/xin"
+            android:text="标题"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_50"
+            android:background="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_5"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:background="@drawable/fillet"
+        android:orientation="horizontal"
+        android:padding="@dimen/dip_10">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:enabled="true"
+            android:gravity="top"
+            android:hint="内容 "
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="4"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/problem_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:numColumns="4" />
+
+    <TextView
+        android:id="@+id/bt_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:textSize="@dimen/fond_16sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/bt_select"
+        android:text="提交"
+        android:textColor="@color/white" />
+    <ImageView
+        android:layout_marginTop="@dimen/dip_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_zwt" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:layout_marginTop="@dimen/dip_10"
+        android:gravity="center"
+        android:text="版权所有：微聚赢网络科技有限公司" />
+</LinearLayout>

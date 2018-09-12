@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dip_15">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/activity_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:src="@mipmap/icon_mygrowth_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="活动内容"
+                android:textSize="@dimen/fond_18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dip_10"
+                android:src="@mipmap/icon_fen" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_10"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Activity_Content_image"
+                android:layout_width="@dimen/dip_35"
+                android:layout_height="@dimen/dip_45"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:src="@mipmap/icon_homejigou" />
+            <TextView
+                android:id="@+id/Activity_Content_geren_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/icon_geren"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="王小兰"
+                android:textSize="@dimen/fond_12sp" />
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/Activity_Content_uid_types"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Activity_Content_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/icon_qi"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:text="诸暨文莱教育"
+                    android:textSize="@dimen/fond_12sp" />
+
+                <TextView
+                    android:id="@+id/Activity_Content_org_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dip_5"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:text="认证企业"
+                    android:textColor="@color/movem_color"
+                    android:textSize="@dimen/fond_14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Activity_Content_org_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:text="迎春户外活动欢迎报名"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dip_10">
+
+            <TextView
+                android:id="@+id/Activity_Content_org_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:text="7小时前" />
+
+            <TextView
+                android:id="@+id/Activity_Content_see_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dip_100"
+                android:drawableLeft="@mipmap/icon_see"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="123344"
+                android:textSize="@dimen/fond_12sp" />
+
+            <TextView
+                android:id="@+id/Activity_Content_collect_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@mipmap/icon_xin"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="12355344"
+                android:textSize="@dimen/fond_12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Activity_Content_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginRight="@dimen/dip_10"
+            android:text="简介：中国工程院2017夺肝肝肝会肝仍需肝会仍需仍需地肝肝圾脍仍需肝地脸会仍需肝肝会仍需仍需脍仍需仍需仍需人" />
+
+        <TextView
+            android:id="@+id/Activity_Content_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip_20"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_10"
+            android:text="报名范围：诸暨市 孩子年龄3-5岁"
+            android:textColor="@color/movem_color" />
+
+        <TextView
+            android:id="@+id/Activity_Content_enlistStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:drawableLeft="@mipmap/icon_zhong"
+            android:drawablePadding="@dimen/dip_5"
+            android:text="报名开始时间：2017.11.22  00：00"
+            android:textSize="@dimen/fond_12sp" />
+
+        <TextView
+            android:id="@+id/Activity_Content_enlistendt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_5"
+            android:drawableLeft="@mipmap/icon_zhong"
+            android:drawablePadding="@dimen/dip_5"
+            android:text="报名开始时间：2017.11.22  00：00"
+            android:textSize="@dimen/fond_12sp" />
+
+        <TextView
+            android:id="@+id/Activity_Content_act_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_10"
+            android:drawableLeft="@mipmap/icon_zhong"
+            android:drawablePadding="@dimen/dip_5"
+            android:text="报名开始时间：2017.11.22  00：00"
+            android:textSize="@dimen/fond_12sp" />
+
+        <TextView
+            android:id="@+id/Activity_Content_act_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_5"
+            android:drawableLeft="@mipmap/icon_zhong"
+            android:drawablePadding="@dimen/dip_5"
+            android:text="报名开始时间：2017.11.22  00：00"
+            android:textSize="@dimen/fond_12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_5"
+            android:layout_marginTop="@dimen/dip_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Activity_Content_org_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_20"
+                android:drawableLeft="@mipmap/icon_dw"
+                android:drawablePadding="@dimen/dip_5"
+                android:padding="@dimen/dip_5"
+                android:text="诸暨市万达广场" />
+
+            <TextView
+                android:id="@+id/Activity_Content_enroll_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_mulv"
+                android:drawablePadding="@dimen/dip_5"
+                android:padding="@dimen/dip_5"
+                android:text="王先生" />
+
+            <TextView
+                android:id="@+id/Activity_Content_enroll_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_dh"
+                android:drawablePadding="@dimen/dip_5"
+                android:padding="@dimen/dip_5"
+                android:paddingBottom="@dimen/dip_10"
+                android:text="13889666542" />
+
+            <TextView
+                android:id="@+id/Activity_Content_enroll_enroll_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_qq"
+                android:drawablePadding="@dimen/dip_5"
+                android:padding="@dimen/dip_5"
+                android:text="123456789" />
+
+            <TextView
+                android:id="@+id/Activity_Content_enroll_enroll_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_wx"
+                android:drawablePadding="@dimen/dip_5"
+                android:padding="@dimen/dip_5"
+                android:text="1234567542" />
+
+            <TextView
+                android:id="@+id/Activity_Content_enroll_enroll_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_emil"
+                android:drawablePadding="@dimen/dip_5"
+                android:padding="@dimen/dip_5"
+                android:paddingBottom="@dimen/dip_10"
+                android:text="13889666542" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:text="报名费用："
+                android:textColor="@color/fond_cloer"
+                android:textSize="@dimen/fond_14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Activity_Content_enroll_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:text="0"
+                android:textColor="@color/movem_color"
+                android:textSize="@dimen/fond_20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:text="元"
+                android:textColor="@color/movem_color"
+                android:textSize="@dimen/fond_16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Activity_Content_enroll_mybaomin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip_20"
+            android:layout_marginLeft="@dimen/dip_5"
+            android:layout_marginTop="@dimen/dip_10"
+            android:background="@drawable/btn_bg_normal11"
+            android:paddingBottom="@dimen/dip_10"
+            android:paddingLeft="@dimen/dip_30"
+            android:paddingRight="@dimen/dip_30"
+            android:paddingTop="@dimen/dip_10"
+            android:text="我要报名"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fond_14sp" />
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dip_150"-->
+            <!--android:layout_margin="@dimen/dip_5"-->
+            <!--android:layout_marginTop="@dimen/dip_10"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@mipmap/icon_xxmmm" />-->
+
+        <LinearLayout
+            android:id="@+id/Activity_Content_myaddimage"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_10"
+            android:background="@mipmap/icon_zwt" />
+    </LinearLayout>
+</ScrollView>

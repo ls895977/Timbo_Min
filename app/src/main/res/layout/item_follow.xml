@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dip_1"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dip_10"
+            android:paddingTop="@dimen/dip_10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/dip_50"
+                android:layout_height="@dimen/dip_50"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dip_30"
+                android:layout_marginTop="@dimen/dip_5"
+                android:src="@mipmap/icon_touxaing" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dip_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="王晓萌"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dip_5"
+                    android:text="7小时前登录"
+                    android:textSize="@dimen/fond_12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dip_5"
+                    android:text="最新发布技能"
+                    android:textSize="@dimen/fond_12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/dip_5"
+            android:drawableRight="@mipmap/icon_rightbg"
+            android:layout_marginTop="@dimen/dip_60"
+            android:layout_marginRight="@dimen/dip_100"
+            android:text="前往"
+            android:textSize="@dimen/fond_14sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_chaa"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dip_10"
+            android:padding="@dimen/dip_10" />
+    </RelativeLayout>
+</LinearLayout>

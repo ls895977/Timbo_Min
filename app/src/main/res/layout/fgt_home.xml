@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.lishan.timbo_min.view.ObserveScrollView
+        android:id="@+id/home_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dip_40">
+
+            <LinearLayout
+                android:id="@+id/home_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/dip_10"
+                android:paddingTop="@dimen/dip_30">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_home_left" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dip_10"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/boder_secher" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:background="@drawable/boder_secher"
+                    android:paddingBottom="@dimen/dip_2"
+                    android:layout_marginBottom="@dimen/dip_5"
+                    android:paddingLeft="@dimen/dip_20"
+                    android:paddingRight="@dimen/dip_20"
+                    android:paddingTop="@dimen/dip_2"
+                    android:text="搜索" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dip_20"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:drawableRight="@mipmap/icon_down2"
+                    android:text="上海" />
+            </LinearLayout>
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_200" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_1"
+                android:background="@color/gray1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_1"
+                android:background="#f4f4f4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dip_10">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/home_gridivew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f8f8f8" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_2"
+                android:background="#f4f4f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dip_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_new_message"
+                    android:textSize="@dimen/fond_20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:gravity="center"
+                    android:text="....春节期间放假7天2月23日上班....."
+                    android:textColor="#ababab"
+                    android:textSize="@dimen/fond_14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_10"
+                android:background="#f3f3f3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_30">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dip_5"
+                    android:paddingLeft="@dimen/dip_10"
+                    android:text="免费课程"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:drawableRight="@mipmap/icon_rightbg"
+                    android:text="更多" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="289dp"
+                    android:layout_toEndOf="@+id/textView6"
+                    android:layout_toRightOf="@+id/textView6"
+                    android:layout_weight="1"
+                    android:background="@drawable/boder_secher" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f4f4f4">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/home_youhuijuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dip_10"
+                    android:text="亲子活动"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/dip_20"
+                    android:text="更多"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/fond_16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_10"
+                android:background="#f4f4f4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/id_Recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#ffff0000" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_10"
+                android:background="#f4f4f4" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dip_10"
+                    android:text="成长咨询"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/dip_20"
+                    android:text="更多"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/fond_16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_10"
+                android:background="#f4f4f4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/home_chenzhang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#ffff0000" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.example.lishan.timbo_min.view.ObserveScrollView>
+    //当title向上滚动的时候显示在头部
+
+    <LinearLayout
+        android:id="@+id/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_160"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dip_25"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dip_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小树藤" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:layout_weight="1"
+                android:background="@drawable/boder_secher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:background="@drawable/boder_secher"
+                android:paddingBottom="@dimen/dip_2"
+                android:paddingLeft="@dimen/dip_20"
+                android:paddingRight="@dimen/dip_20"
+                android:paddingTop="@dimen/dip_2"
+                android:text="搜索" />
+
+            <ImageView
+                android:layout_width="@dimen/dip_20"
+                android:layout_height="@dimen/dip_20"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:src="@mipmap/icon_shear" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_gridivew1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f8f8f8" />
+    </LinearLayout>
+</RelativeLayout>

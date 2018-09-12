@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/mhealthageritem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/dip_5">
+
+            <ImageView
+                android:id="@+id/item_healthpagerlistimage"
+                android:layout_width="@dimen/dip_100"
+                android:layout_height="@dimen/dip_60"
+                android:layout_margin="@dimen/dip_5"
+                android:background="@mipmap/icon_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip_5"
+                        android:text="吉他演奏"
+                        android:textColor="@color/fond_cloer"
+                        android:textSize="@dimen/fond_14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dip_10"
+                        android:layout_marginTop="@dimen/dip_5"
+                        android:text="2017-11-12"
+                        android:textSize="@dimen/fond_12sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:text="胡萝卜炖肉的做法" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip_5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dip_80"
+                        android:drawablePadding="@dimen/dip_5"
+                        android:drawableRight="@mipmap/icon_zhan"
+                        android:text="作者：王小明" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dip_10"
+                        android:text="删除"
+                        android:textSize="@dimen/fond_16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_1"
+            android:layout_marginBottom="@dimen/dip_5"
+            android:background="#f4f4f4" />
+    </LinearLayout>
+</RelativeLayout>

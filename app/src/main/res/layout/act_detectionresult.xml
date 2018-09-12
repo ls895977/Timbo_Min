@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/dip_10"
+            android:text="检测结果"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginRight="@dimen/dip_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#f3a9de"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dip_10"
+                android:text="国家标准为："
+                android:textSize="@dimen/fond_16sp" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_1"
+                android:layout_weight="1"
+                android:background="#f3a9de"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dip_10"
+                android:text="您的数据"
+                android:textSize="@dimen/fond_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginRight="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/standard_sex"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffecb9"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dip_10"
+                android:text="女孩"
+                android:textSize="@dimen/fond_16sp" />
+
+            <TextView
+                android:id="@+id/you_sex"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_1"
+                android:layout_weight="1"
+                android:background="#ffecb9"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dip_10"
+                android:text="女孩"
+                android:textSize="@dimen/fond_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginRight="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/standard_age"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffecb9"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dip_10"
+                android:text="13岁"
+                android:textSize="@dimen/fond_16sp" />
+
+            <TextView
+                android:id="@+id/you_age"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_1"
+                android:layout_weight="1"
+                android:background="#ffecb9"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dip_10"
+                android:text="13岁"
+                android:textSize="@dimen/fond_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginRight="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/standard_shengao"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffecb9"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dip_10"
+                android:text="身高1.4—1.5米"
+                android:textSize="@dimen/fond_16sp" />
+
+            <TextView
+                android:id="@+id/you_shengao"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_1"
+                android:layout_weight="1"
+                android:background="#ffecb9"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dip_10"
+                android:text="身高1.4—1.5米"
+                android:textSize="@dimen/fond_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginRight="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/standard_gonjin"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffecb9"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dip_10"
+                android:text="体重：40—50公斤"
+                android:textSize="@dimen/fond_16sp" />
+
+            <TextView
+                android:id="@+id/you_gongjin"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_1"
+                android:layout_weight="1"
+                android:background="#ffecb9"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dip_10"
+                android:text="体重：40—50公斤"
+                android:textSize="@dimen/fond_16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/standard_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dip_15"
+            android:text="您的体型偏瘦，应当加强锻炼与增加饮食。"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/detectionresult_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:layout_marginRight="@dimen/dip_10"
+                android:layout_marginTop="@dimen/dip_30"
+                android:background="@drawable/detectionresult_tv"
+                android:padding="@dimen/dip_15"
+                android:text="推荐每日运动计划"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fond_20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dip_20"
+                android:layout_marginTop="@dimen/dip_10"
+                android:src="@mipmap/icon_ren2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detectionresult_title"
+                android:layout_marginLeft="@dimen/dip_40"
+                android:layout_marginTop="@dimen/dip_10"
+                android:text="每日慢跑10分钏"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/detectionresult_planDistancePerDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7.2"
+                        android:textColor="#ff5c58"
+                        android:textSize="@dimen/fond_25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dip_5"
+                        android:text="公里/日"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/zhongliang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5623"
+                        android:textColor="#ff5c58"
+                        android:textSize="@dimen/fond_25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dip_5"
+                        android:text="千卡/日消耗"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dip_10"
+            android:paddingLeft="@dimen/dip_40"
+            android:paddingRight="@dimen/dip_40"
+            android:text="每日运动有利于增加您饮食并强化您的体质，使您更快的成长。"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_16sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dip_10"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dip_20">
+            <ImageView
+                android:id="@+id/detectionresult_lingqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_ling" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:src="@mipmap/icon_fang" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f8f6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dip_20"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/ques_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dip_30"
+            android:text="添加成长记录"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_18sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/growthrecord_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dip_20"
+            android:src="@mipmap/icon_hader" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dip_10"
+            android:text="刘晓萌" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dip_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年龄"
+                android:textColor="@color/fond_cloer"
+                android:textSize="@dimen/fond_16sp" />
+
+            <EditText
+                android:layout_width="@dimen/dip_90"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 岁"
+                android:textColor="@color/fond_cloer"
+                android:textSize="@dimen/fond_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dip_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体重"
+                android:textColor="@color/fond_cloer"
+                android:textSize="@dimen/fond_16sp" />
+
+            <EditText
+                android:layout_width="@dimen/dip_80"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公斤"
+                android:textColor="@color/fond_cloer"
+                android:textSize="@dimen/fond_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dip_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身高"
+                android:textColor="@color/fond_cloer"
+                android:textSize="@dimen/fond_16sp" />
+
+            <EditText
+                android:layout_width="@dimen/dip_80"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="厘米"
+                android:textColor="@color/fond_cloer"
+                android:textSize="@dimen/fond_16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/growthrecord_details_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_60"
+            android:layout_marginRight="@dimen/dip_60"
+            android:layout_marginTop="@dimen/dip_40"
+            android:background="@drawable/bt_growthrecord_details"
+            android:gravity="center_horizontal"
+            android:text="提    交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fond_18sp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dip_40"
+            android:gravity="center_horizontal"
+            android:textColor="@color/fond_cloer"
+            android:text="检测您的体型"
+            android:textSize="@dimen/fond_14sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

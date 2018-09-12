@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mycompetenlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dip_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/competenceducation_imc"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/dip_140"
+                android:layout_weight="2"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_timbox" />
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dip_5">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="@dimen/dip_35"
+                        android:layout_height="@dimen/dip_30"
+                        android:layout_marginLeft="@dimen/dip_10"
+                        android:src="@mipmap/icon_hader" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip_5">
+
+                        <TextView
+                            android:id="@+id/competenceducation_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="@dimen/dip_5"
+                            android:text="诸暨文莱教育"
+                            android:textSize="@dimen/fond_12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="@dimen/dip_5"
+                            android:paddingTop="@dimen/dip_5"
+                            android:text="2014.5.23"
+                            android:textSize="@dimen/fond_12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:paddingLeft="@dimen/dip_5"
+                    android:paddingTop="@dimen/dip_5"
+                    android:text="儿童舞蹈免费视听"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:paddingLeft="@dimen/dip_5"
+                    android:paddingTop="@dimen/dip_5"
+                    android:text="踢键子，每分钏踢120下ß"
+                    android:textSize="@dimen/fond_12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_see"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="14565334" />
+
+            <TextView
+                android:id="@+id/arenadetalzhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@mipmap/icon_zhan"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="1205" />
+
+            <TextView
+                android:id="@+id/arenadetaill_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip_10"
+                android:layout_toLeftOf="@+id/arenadetalzhan"
+                android:drawableLeft="@mipmap/icon_pl"
+                android:drawablePadding="@dimen/dip_5"
+                android:text="532" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dip_5"
+                android:layout_toLeftOf="@+id/arenadetaill_message"
+                android:text="评论"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/fond_12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

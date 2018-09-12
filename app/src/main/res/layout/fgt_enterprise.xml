@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f4f4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#476fa0"
+            android:paddingTop="@dimen/dip_10"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/member_fanhui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dip_10"
+                    android:src="@mipmap/icon_fanhui1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:drawableRight="@mipmap/icon_qieye"
+                    android:padding="@dimen/dip_10"
+                    android:text="设置"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/my_hader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dip_20">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/dip_90"
+                    android:layout_height="@dimen/dip_90"
+                    android:layout_marginLeft="@dimen/dip_30"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:src="@mipmap/icon_touxaing" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="诸暨顾学教育"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fond_18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="@dimen/dip_5"
+                        android:text="登录账号：13889333253"
+                        android:textSize="@dimen/fond_16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dip_5"
+                        android:text="当前级别：小队长"
+                        android:textSize="@dimen/fond_16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dip_5"
+                            android:layout_marginLeft="@dimen/dip_5"
+                            android:padding="@dimen/dip_2"
+                            android:text="余额：58453"
+                            android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/Enterprise_Xrecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip_80" />
+    </LinearLayout>
+</ScrollView>

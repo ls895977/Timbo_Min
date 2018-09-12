@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:paddingBottom="@dimen/dip_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10">
+
+        <LinearLayout
+            android:id="@+id/item_home1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/dip_5">
+
+            <ImageView
+                android:id="@+id/item_HomeHader"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@mipmap/icon_tu"
+                android:padding="@dimen/dip_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dip_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dip_5"
+                    android:text="带娃外出防走失技能...."
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dip_5"
+                    android:singleLine="true"
+                    android:textColor="#979797"
+                    android:text="而示来将推出的P300马国版本的车型 "
+                    android:textSize="@dimen/fond_16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dip_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/icon_tumin"
+                        android:drawablePadding="@dimen/dip_5"
+                        android:gravity="center"
+                        android:textColor="#979797"
+                        android:text="甜甜"
+                        android:textSize="@dimen/fond_14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="#979797"
+                        android:paddingRight="@dimen/dip_10"
+                        android:text="2917.11.12"
+                        android:textSize="@dimen/fond_14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

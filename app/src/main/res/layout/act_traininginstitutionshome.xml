@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.youth.banner.Banner
+                android:id="@+id/TrainingInstitutionshome_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_200" />
+
+            <ImageView
+                android:id="@+id/TrainingInstitutionshome_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:src="@mipmap/icon_mygrowth_title" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dip_10"
+            android:paddingTop="@dimen/dip_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:drawablePadding="@dimen/dip_10"
+                android:drawableRight="@mipmap/icon_4jt"
+                android:gravity="center_vertical"
+                android:text="分类"
+                android:textSize="@dimen/fond_16sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dip_30"
+                android:layout_marginLeft="@dimen/dip_20"
+                android:layout_weight="2222"
+                android:background="@drawable/bt_arenaselect1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:src="@mipmap/icon_fa" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dip_15"
+                    android:background="@null" />
+
+                <ImageView
+                    android:layout_width="@dimen/dip_20"
+                    android:layout_height="@dimen/dip_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dip_5"
+                    android:src="@mipmap/icon_chaa" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:paddingRight="@dimen/dip_20"
+                android:text="上海"
+                android:textSize="@dimen/fond_16sp"  />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/TrainingInstitutionshome_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dip_10" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_titlepeixun" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="@dimen/dip_30"
+            android:paddingTop="@dimen/dip_20"
+            android:text="版权所有：微聚赢网络科技有限公司" />
+    </LinearLayout>
+</ScrollView>

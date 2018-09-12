@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dip_20">
+
+        <ImageView
+            android:id="@+id/Rechargeofgoldbean_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:src="@mipmap/icon_hui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/dip_10"
+            android:textSize="@dimen/fond_18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_40"
+            android:layout_marginRight="@dimen/dip_40"
+            android:layout_marginTop="@dimen/dip_100"
+            android:background="@null"
+            android:gravity="center"
+            android:inputType="number"
+            android:padding="@dimen/dip_10"
+            android:textSize="@dimen/fond_22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_2"
+            android:layout_marginLeft="@dimen/dip_40"
+            android:layout_marginRight="@dimen/dip_40"
+            android:background="#e0e0e0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_20"
+            android:padding="@dimen/dip_10">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/rad_sle"
+                    android:drawableLeft="@mipmap/icon_weixin"
+                    android:text="微信" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_30"
+                    android:button="@drawable/rad_sle"
+                    android:drawableLeft="@mipmap/icon_zhifubao"
+                    android:text="支付宝" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dip_15"
+            android:background="@drawable/tv_chongzhi"
+            android:gravity="center"
+            android:text="充值"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_40"
+            android:layout_marginRight="@dimen/dip_40"
+            android:layout_marginTop="@dimen/dip_10"
+            android:text="说明：金豆比例1：100，1元可购买100个金豆。最小重置金额1元，整数充值。"
+            android:textColor="#898989" />
+    </LinearLayout>
+</LinearLayout>

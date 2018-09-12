@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f8f6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dip_100"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/ques_bg">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dip_10">
+
+        <LinearLayout
+            android:id="@+id/my_chenzhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dip_10"
+            android:background="@drawable/ques_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/dip_10">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="刘晓萌" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10岁" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dip_20"
+                android:text="增加成长记录"
+                android:textColor="#f41b16"
+                android:textSize="@dimen/fond_18sp" />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/growthrecord_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/dip_20"
+            android:src="@mipmap/icon_hader" />
+
+        <ImageView
+            android:id="@+id/growthrecord_grow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dip_10"
+            android:src="@mipmap/icon_cheng" />
+    </RelativeLayout>
+</RelativeLayout>

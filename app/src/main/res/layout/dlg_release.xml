@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/release"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dip_120">
+
+        <RelativeLayout
+            android:id="@+id/myhuodong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_60"
+            android:background="@drawable/boder_timbo"
+            android:padding="@dimen/dip_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dip_20"
+                android:paddingLeft="@dimen/dip_2"
+                android:paddingRight="@dimen/dip_2"
+                android:paddingTop="@dimen/dip_20"
+                android:text="发布活动"
+                android:textColor="#b1b1b1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/myjineng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_20"
+            android:layout_toRightOf="@+id/myhuodong"
+            android:background="@drawable/boder_timbo"
+            android:padding="@dimen/dip_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dip_20"
+                android:paddingLeft="@dimen/dip_10"
+                android:paddingRight="@dimen/dip_10"
+                android:paddingTop="@dimen/dip_20"
+                android:text="晒技能"
+                android:textColor="#b1b1b1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mytiwen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_20"
+            android:layout_toRightOf="@id/myjineng"
+            android:background="@drawable/boder_timbo"
+            android:padding="@dimen/dip_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dip_20"
+                android:paddingLeft="@dimen/dip_2"
+                android:paddingRight="@dimen/dip_2"
+                android:paddingTop="@dimen/dip_20"
+                android:text="我要提问"
+                android:textColor="#b1b1b1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mychengzhang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_60"
+            android:layout_toRightOf="@id/mytiwen"
+            android:background="@drawable/boder_timbo">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dip_20"
+                android:paddingLeft="@dimen/dip_2"
+                android:paddingRight="@dimen/dip_2"
+                android:paddingTop="@dimen/dip_20"
+                android:text="成长资讯"
+                android:textColor="#b1b1b1" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

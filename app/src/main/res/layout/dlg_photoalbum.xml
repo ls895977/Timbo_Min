@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/dip_10"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/photoalbum_carme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dip_5"
+        android:background="@drawable/shap"
+        android:textColor="@color/fond_cloer"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/fond_16sp"
+        android:text="拍照" />
+
+    <TextView
+        android:id="@+id/photoalbum_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dip_5"
+        android:textColor="@color/fond_cloer"
+        android:textSize="@dimen/fond_16sp"
+        android:background="@drawable/shap"
+        android:gravity="center_horizontal"
+        android:text="相册" />
+
+    <TextView
+        android:id="@+id/phontalbum_cancel"
+        android:textSize="@dimen/fond_16sp"
+        android:textColor="@color/fond_cloer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dip_5"
+        android:background="@drawable/shap"
+        android:gravity="center_horizontal"
+        android:text="取消" />
+</LinearLayout>

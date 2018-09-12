@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lishan.timbo_min">
+    <!-- if you want to load images from the internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入对象存储BOS数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!-- SD卡读取权限，用于写入对象存储BOS数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    <!-- 用于加快GPS首次定位-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+    <!-- 用于Android M及以上系统，申请加入忽略电池优化白名单-->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"></uses-permission>
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:name=".common.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.Act_WelcomePage"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ui.Act_Login">
+        </activity>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Ri0UfUWFU97nPeSvUEG12E084c6j7GLM" />
+        <activity android:name=".ui.Act_ForgotPassword" />
+        <activity android:name=".ui.Act_Register" />
+        <activity android:name=".ui.Act_RG_Perfect_information" />
+        <activity android:name=".ui.Act_Enterprise_Registration" />
+        <activity android:name=".ui.Act_Enterprise_Data" />
+        <activity android:name=".ui.home.Act_HealthPage" />
+        <activity android:name=".ui.home.Act_GrowthConsultation" />
+        <activity android:name=".ui.home.Act_Problem" />
+        <activity android:name=".ui.home.Act_HealthPage_Details" />
+        <activity android:name=".ui.home.Act_More" />
+        <activity android:name=".ui.home.Act_I_Know" />
+        <activity android:name=".ui.home.growth.Act_MyGrowth" />
+        <activity android:name=".ui.home.growth.Act_GrowthRecord_Details" />
+        <activity android:name=".ui.home.growth.Act_MyEssayDetails" />
+        <activity android:name=".ui.home.growth.Act_Comment_Details"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            />
+        <activity android:name=".ui.home.growth.Act_Picture_Browsing" />
+        <activity android:name=".ui.home.motion.Act_MyMovem" />
+        <activity android:name=".ui.home.motion.Act_Sign" />
+        <activity android:name=".ui.home.motion.Act_DetectionResult" />
+        <activity android:name=".ui.home.motion.Act_CreateAPlan" />
+        <activity android:name=".ui.home.motion.Act_MotionCounter" />
+        <activity android:name=".ui.home.motion.Act_Location" />
+        <activity android:name=".ui.home.arena.Act_Arena" />
+        <activity android:name=".ui.home.arena.Act_MyEssay" />
+        <activity android:name=".ui.home.arena.Act_ArenaDetailPage" />
+        <activity android:name=".ui.home.myclass.Act_MyClass" />
+        <activity android:name=".ui.home.myclass.Act_MyTeacher" />
+        <activity android:name=".ui.home.basningskills.Act_BasningSkillsDetali" />
+        <activity android:name=".ui.home.basningskills.Act_BasningSkills" />
+        <activity android:name=".ui.home.basningskills.Act_Mystudy" />
+        <activity android:name=".ui.home.latestactivities.Act_LatestActivities" />
+        <activity android:name=".ui.home.latestactivities.Act_ReleaseActivities" />
+        <activity android:name=".ui.home.latestactivities.Act_ReleaseActivities1" />
+        <activity android:name=".ui.home.latestactivities.Act_ReleaseActivities2" />
+        <activity android:name=".ui.home.latestactivities.Act_ReleaseActivities3" />
+        <activity android:name=".ui.home.latestactivities.Act_Activity_Content" />
+        <activity android:name=".ui.home.latestactivities.Act_Enro" />
+        <activity android:name=".ui.home.competencedducation.Act_CompetencEdducation" />
+        <activity android:name=".ui.home.competencedducation.Act_CompetencEdducationDetal" />
+        <activity android:name=".ui.home.traininginstitutions.Act_TrainingInstitutions" />
+        <activity android:name=".ui.home.traininginstitutions.Act_TraininginstitutionsTuandui" />
+        <activity android:name=".ui.home.traininginstitutions.Act_EducationalVideo" />
+        <activity android:name=".ui.home.traininginstitutions.Act_ExcellentStudents" />
+        <activity android:name=".ui.home.traininginstitutions.Act_OurTeam" />
+        <activity android:name=".ui.home.traininginstitutions.Act_ContactUs" />
+        <activity android:name=".ui.home.traininginstitutions.Act_TrainingInstitutionsHome" />
+        <activity android:name=".ui.home.basningskills.Act_Vote" />
+        <activity android:name=".ui.home.basningskills.Act_VotingDetails" />
+        <activity android:name=".ui.member.Act_Integral"/>
+        <activity android:name=".ui.member.Act_Imazamox"/>
+        <activity android:name=".ui.member.Act_ExtractionOfGoldBean"/>
+        <activity android:name=".ui.member.Act_Rechargeofgoldbean"/>
+        <activity android:name=".ui.member.Act_SignIn"/>
+        <activity android:name=".ui.member.Act_Follow"/>
+        <activity android:name=".ui.member.Act_MyRecord"/>
+        <activity android:name=".ui.member.Act_ActivityRecord"/>
+        <activity android:name=".ui.member.Act_MyPK"/>
+        <activity android:name=".ui.member.Act_Skill"/>
+        <activity android:name=".ui.member.Act_Collection"/>
+        <activity android:name=".ui.member.Act_Classroom"/>
+        <activity android:name=".ui.member.Act_Parent"/>
+        <activity android:name=".ui.member.Act_PersonalData"/>
+        <activity android:name=".ui.member.Act_TeacherClass"/>
+        <activity android:name=".ui.member.Act_MyTeacher1"/>
+        <activity android:name=".ui.enterprise.Act_EnterpriseInformation"/>
+        <activity android:name=".ui.Act_RegistrationSelection"/>
+        <activity android:name=".MyWeb">
+        </activity>
+        <activity android:name=".ui.Act_Loding">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Act_Welcome">
+        </activity>
+        <activity android:name=".ui.MyWebView"/>
+        <activity android:name=".ui.home.traininginstitutions.Act_Enroll" />
+        <activity android:name=".ui.member.Act_MyTeacher" />
+        <activity android:name=".ui.MyWebView"
+            tools:ignore="DuplicateActivity" />
+        <service
+            android:name="com.baidu.trace.LBSTraceService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" />
+    </application>
+
+</manifest>

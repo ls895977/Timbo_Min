@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingBottom="@dimen/dip_60"
+            android:paddingTop="@dimen/dip_25"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/arenadetailpage_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dip_10"
+                    android:src="@mipmap/icon_mygrowth_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="擂台"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:drawableRight="@mipmap/icon_fen"
+                    android:padding="@dimen/dip_10"
+                    android:text="请为我加油！"
+                    android:textColor="@color/movem_color"
+                    android:textSize="@dimen/fond_14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/arenadetailpage_hader"
+                    android:layout_width="@dimen/dip_60"
+                    android:layout_height="@dimen/dip_60"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dip_10"
+                    android:layout_marginLeft="@dimen/dip_20"
+                    android:layout_marginTop="@dimen/dip_10"
+                    android:src="@mipmap/icon_hader" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="擂主：已经保持记录100天"
+                        android:textColor="@color/movem_color"
+                        android:textSize="@dimen/fond_14sp" />
+
+                    <TextView
+                        android:id="@+id/arenadetailpage_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dip_2"
+                        android:text="红红晃晃"
+                        android:textSize="@dimen/fond_12sp" />
+
+                    <TextView
+                        android:id="@+id/arenadetailpage_addr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dip_2"
+                        android:text="浙江省诸暨市"
+                        android:textSize="@dimen/fond_12sp" />
+
+                    <TextView
+                        android:id="@+id/arenadetailpage_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dip_2"
+                        android:text="8岁    二年级"
+                        android:textSize="@dimen/fond_12sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dip_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型：双摇跳绳"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:text="7小时前"
+                    android:textSize="@dimen/fond_12sp" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/arenadetailpage_join_url"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_180"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:layout_marginRight="@dimen/dip_10"
+                android:layout_marginTop="@dimen/dip_10"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_c1" />
+            <TextView
+                android:id="@+id/arenadetailpage_join_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:text="成绩说明：十分钟内跳跃300次"
+                android:textSize="@dimen/fond_12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/arena_ds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_ds" />
+
+                <ImageView
+                    android:id="@+id/arena_gz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:layout_toRightOf="@+id/arena_ds"
+                    android:src="@mipmap/icon_ds" />
+                <ImageView
+                    android:id="@+id/arena_sc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:layout_toRightOf="@+id/arena_gz"
+                    android:src="@mipmap/icon_sc" />
+
+                <TextView
+                    android:id="@+id/arena_pl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dip_80"
+                    android:drawableLeft="@mipmap/icon_pl"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:text="532" />
+                <TextView
+                    android:id="@+id/arenadetailpage_zan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dip_10"
+                    android:drawableLeft="@mipmap/icon_zhan"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:text="1205" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10">
+
+                <TextView
+                    android:id="@+id/item_faqitiaozhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/btn_bg_normal11"
+                    android:paddingBottom="@dimen/dip_2"
+                    android:paddingLeft="@dimen/dip_2"
+                    android:paddingRight="@dimen/dip_5"
+                    android:paddingTop="@dimen/dip_2"
+                    android:text="发起挑战"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/arenaDetaliRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_2"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/arena_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dip_5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_100"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dip_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="刘晓萌"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:text="10岁" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arena_jiangbei"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dip_80"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_30"
+        android:src="@mipmap/icon_lz" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_hader"
+        android:layout_width="@dimen/dip_60"
+        android:layout_height="@dimen/dip_60"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:src="@mipmap/icon_hader" />
+</RelativeLayout>

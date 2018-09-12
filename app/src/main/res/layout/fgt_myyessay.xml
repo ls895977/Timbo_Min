@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/myyessay_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dip_60"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dip_10">
+        <LinearLayout
+            android:id="@+id/myyessay_chenzhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dip_10"
+            android:background="@drawable/ques_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/dip_10">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="刘晓萌" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10岁" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dip_50"
+                android:text="我的随笔"
+                android:textColor="#1d5f44"
+                android:textSize="@dimen/fond_18sp" />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/myyessay_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/dip_20"
+            android:src="@mipmap/icon_hader" />
+
+        <ImageView
+            android:id="@+id/myyessay_grow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dip_10"
+            android:src="@mipmap/icon_shu" />
+    </RelativeLayout>
+</RelativeLayout>

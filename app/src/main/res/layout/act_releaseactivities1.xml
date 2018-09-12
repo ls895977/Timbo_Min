@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/releaseactivities1_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:src="@mipmap/icon_mygrowth_title" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:layout_marginRight="@dimen/dip_10"
+                android:layout_marginTop="@dimen/dip_10"
+                android:background="@drawable/boder_releaseactivities1yanse1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dip_20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:layout_marginRight="@dimen/dip_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/releaseactivities1_kaishi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="报名开始" />
+
+                    <EditText
+                        android:id="@+id/releaseactivities1_enroll_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/dip_5"
+                        android:layout_toRightOf="@+id/releaseactivities1_kaishi"
+                        android:background="@drawable/boder_releaseactivities"
+                        android:drawablePadding="@dimen/dip_5"
+                        android:drawableRight="@mipmap/icon_jianpan"
+                        android:gravity="center_horizontal"
+                        android:hint="2017.11.22"
+                        android:padding="@dimen/dip_5"
+                        android:textSize="@dimen/fond_14sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:layout_marginRight="@dimen/dip_10"
+                    android:layout_marginTop="@dimen/dip_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/releaseactivities1_jieshu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="报名结束" />
+
+                    <EditText
+                        android:id="@+id/releaseactivities1_enroll_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/dip_5"
+                        android:layout_toRightOf="@+id/releaseactivities1_jieshu"
+                        android:background="@drawable/boder_releaseactivities"
+                        android:drawablePadding="@dimen/dip_5"
+                        android:drawableRight="@mipmap/icon_jianpan"
+                        android:gravity="center_horizontal"
+                        android:hint="2017.11.22"
+                        android:padding="@dimen/dip_5"
+                        android:textSize="@dimen/fond_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dip_20"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:layout_marginRight="@dimen/dip_10"
+                    android:layout_marginTop="@dimen/dip_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/releaseactivities1_didian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="取名地点" />
+
+                    <EditText
+                        android:id="@+id/releaseactivities1_enroll_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dip_5"
+                        android:layout_marginRight="@dimen/dip_5"
+                        android:layout_toRightOf="@+id/releaseactivities1_didian"
+                        android:layout_weight="1"
+                        android:background="@drawable/boder_releaseactivities"
+                        android:drawablePadding="@dimen/dip_5"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/dip_5"
+                        android:textSize="@dimen/fond_14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_du2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#f7f7f7"
+                android:paddingLeft="@dimen/dip_10"
+                android:paddingRight="@dimen/dip_10"
+                android:text="报名"
+                android:textColor="#dd9ff2"
+                android:textSize="@dimen/fond_18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dip_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:layout_marginRight="@dimen/dip_10"
+                android:layout_marginTop="@dimen/dip_10"
+                android:background="@drawable/boder_releaseactivities1yanse2"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dip_20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:layout_marginRight="@dimen/dip_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/releaseactivities1_huodongkaishi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动开始" />
+
+                    <EditText
+                        android:id="@+id/releaseactivities1_act_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/dip_5"
+                        android:layout_toRightOf="@+id/releaseactivities1_huodongkaishi"
+                        android:background="@drawable/boder_releaseactivities"
+                        android:drawablePadding="@dimen/dip_5"
+                        android:drawableRight="@mipmap/icon_jianpan"
+                        android:gravity="center_horizontal"
+                        android:hint="2017.11.22"
+                        android:padding="@dimen/dip_5"
+                        android:textSize="@dimen/fond_14sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:layout_marginRight="@dimen/dip_10"
+                    android:layout_marginTop="@dimen/dip_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/releaseactivities1_huodongjieshu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动结束" />
+
+                    <EditText
+                        android:id="@+id/releaseactivities1_act_endt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/dip_5"
+                        android:layout_toRightOf="@+id/releaseactivities1_huodongjieshu"
+                        android:background="@drawable/boder_releaseactivities"
+                        android:drawablePadding="@dimen/dip_5"
+                        android:drawableRight="@mipmap/icon_jianpan"
+                        android:gravity="center_horizontal"
+                        android:hint="2017.11.22"
+                        android:padding="@dimen/dip_5"
+                        android:textSize="@dimen/fond_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dip_20"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:layout_marginRight="@dimen/dip_10"
+                    android:layout_marginTop="@dimen/dip_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/releaseactivities1_huodongdidian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动地点" />
+
+                    <EditText
+                        android:id="@+id/releaseactivities1_act_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dip_5"
+                        android:layout_marginRight="@dimen/dip_5"
+                        android:layout_toRightOf="@+id/releaseactivities1_huodongdidian"
+                        android:layout_weight="1"
+                        android:background="@drawable/boder_releaseactivities"
+                        android:drawablePadding="@dimen/dip_5"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/dip_5"
+                        android:textSize="@dimen/fond_14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_du1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#f7f7f7"
+                android:paddingLeft="@dimen/dip_10"
+                android:paddingRight="@dimen/dip_10"
+                android:text="活动"
+                android:textColor="#a2d053"
+                android:textSize="@dimen/fond_18sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dip_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_10"
+                android:layout_marginRight="@dimen/dip_10"
+                android:layout_marginTop="@dimen/dip_10"
+                android:background="@drawable/boder_releaseactivities1yanse3"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dip_20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:layout_marginRight="@dimen/dip_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/releaseactivities1_huodongfeiyong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="报名费用" />
+
+                    <EditText
+                        android:id="@+id/releaseactivities1_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:inputType="number"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/dip_5"
+                        android:layout_toRightOf="@+id/releaseactivities1_huodongfeiyong"
+                        android:background="@drawable/boder_releaseactivities"
+                        android:drawablePadding="@dimen/dip_5"
+                        android:drawableRight="@mipmap/icon_jianpan"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/dip_5"
+                        android:textSize="@dimen/fond_14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dip_20"
+                    android:layout_marginLeft="@dimen/dip_60"
+                    android:padding="@dimen/dip_10"
+                    android:text="参与者的报名费会转入您的账户余额中" />
+            </LinearLayout>
+            ß
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#f7f7f7"
+                android:paddingLeft="@dimen/dip_10"
+                android:paddingRight="@dimen/dip_10"
+                android:text="费用"
+                android:textColor="#fbb543"
+                android:textSize="@dimen/fond_18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/releaseactivities1_but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dip_20"
+            android:background="@drawable/bt_select"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dip_10"
+            android:text="下一步"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

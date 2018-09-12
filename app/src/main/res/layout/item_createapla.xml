@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f5f5f5"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dip_2"
+        android:id="@+id/myitemcrate"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dip_10">
+
+            <TextView
+                android:id="@+id/item_createapla_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_5"
+                android:text="创建2017.5.3"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/fond_12sp" />
+
+            <TextView
+                android:id="@+id/item_createapla_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_5"
+                android:text="计划名称ABC"
+                android:textColor="@color/fond_cloer"
+                android:textSize="@dimen/fond_18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/myCreateaplan_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dip_10"
+                    android:background="@drawable/checkbox_styl" />
+
+                <ImageView
+                    android:id="@+id/item_createapla_shezhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/dip_10"
+                    android:src="@mipmap/icon_xu" />
+
+                <ImageView
+                    android:id="@+id/item_createapla_shudown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/dip_10"
+                    android:src="@mipmap/icon_chaa" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+       android:id="@+id/item_createapla_addl"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dip_2"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/item_createapla_add"
+        android:padding="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:background="@color/white"
+        android:layout_width="@dimen/dip_40"
+        android:layout_height="@dimen/dip_40"
+        android:src="@mipmap/icon_jia1" />
+    </LinearLayout>
+</LinearLayout>

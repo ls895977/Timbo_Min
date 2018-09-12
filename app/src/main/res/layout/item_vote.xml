@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item_votelinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dip_1"
+        android:layout_marginLeft="@dimen/dip_1"
+        android:layout_marginRight="@dimen/dip_1"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/dip_60"
+            android:layout_height="@dimen/dip_60"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/dip_10"
+            android:layout_marginLeft="@dimen/dip_20"
+            android:layout_marginTop="@dimen/dip_10"
+            android:src="@mipmap/icon_homejigou" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_10"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dip_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="儿童绘画投票"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dip_10"
+                    android:text="1天前" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_qi"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:text="诸暨文莱教育"
+                    android:textSize="@dimen/fond_13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:drawableLeft="@mipmap/icon_jin"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:text="认证企业（5）"
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/fond_13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/gray"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:text="活动开始时间：2017.11.21     12：40"
+                    android:textSize="@dimen/fond_13sp" />
+
+                <TextView
+                    android:textColor="@color/gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dip_5"
+                    android:text="活动开始时间：2017.11.22     12：40"
+                    android:textSize="@dimen/fond_13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

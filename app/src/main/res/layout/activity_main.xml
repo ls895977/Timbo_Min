@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <FrameLayout
+        android:id="@+id/myFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/main_button"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/tab_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/home"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/fond_selecte" />
+
+        <TextView
+            android:id="@+id/tab_follow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/follow"
+            android:gravity="center"
+            android:text="关注"
+            android:textColor="@drawable/fond_selecte" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tab_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/message"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@drawable/fond_selecte" />
+        <TextView
+            android:id="@+id/tab_member"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/member"
+            android:gravity="center"
+            android:text="会员"
+            android:textColor="@drawable/fond_selecte" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tab_zhong"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/dip_5"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:drawableRight="@drawable/zhong"
+        android:gravity="center" />
+    <TextView
+        android:layout_above="@+id/main_button"
+        android:layout_width="match_parent"
+        android:background="#71bfc9"
+        android:layout_height="@dimen/dip_1" />
+</RelativeLayout>

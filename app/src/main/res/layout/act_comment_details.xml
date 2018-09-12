@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginRight="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_20"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dip_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/comment_details_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dip_10"
+                    android:src="@mipmap/icon_mygrowth_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="请论"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_18sp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/comment_details_message"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/comment_details_senMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dip_10">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/icon_jia2" />
+        <EditText
+            android:id="@+id/comment_details_messageContext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginRight="@dimen/dip_10"
+            android:layout_weight="1"
+            android:background="@drawable/boder_back"
+            android:hint="输入文字信息"
+            android:paddingBottom="@dimen/dip_5"
+            android:paddingLeft="@dimen/dip_10"
+            android:paddingTop="@dimen/dip_5"
+            android:textSize="@dimen/fond_12sp" />
+        <TextView
+            android:id="@+id/comment_details_senbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bt_growthrecord_details1"
+            android:paddingBottom="@dimen/dip_5"
+            android:paddingLeft="@dimen/dip_20"
+            android:paddingRight="@dimen/dip_20"
+            android:paddingTop="@dimen/dip_5"
+            android:text="发送"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

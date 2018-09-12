@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dip_120"
+        android:src="@mipmap/icon_du1i" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dip_30"
+        android:padding="@dimen/dip_5"
+        android:text="已经成功提交"
+        android:textColor="@color/fond_cloer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dip_5"
+        android:text="平台将在24小时内审核"
+        android:textColor="@color/fond_cloer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dip_5"
+        android:text="敬请等待"
+        android:textColor="@color/fond_cloer" />
+
+    <TextView
+        android:id="@+id/re_bt1"
+        android:layout_width="@dimen/dip_200"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_bg_normal"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dip_10"
+        android:text="前往最新活動"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/re_bt2"
+        android:layout_width="@dimen/dip_200"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dip_20"
+        android:background="@drawable/bt_select1"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dip_10"
+        android:text="前往网站首页"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/re_bt3"
+        android:layout_width="@dimen/dip_200"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dip_20"
+        android:background="@drawable/btn_bg_normal11"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dip_10"
+        android:text="前往会员中心"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

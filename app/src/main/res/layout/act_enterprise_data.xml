@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b6d2f2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ed_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_15"
+            android:src="@mipmap/back_icon" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dip_20"
+        android:text="注册账号"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dip_20" />
+
+    <EditText
+        android:id="@+id/Enterprisecompany_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/shape_corner"
+        android:hint="请输入企业名称"
+        android:padding="@dimen/dip_5"
+        android:paddingLeft="@dimen/dip_10"
+        android:textColor="@color/contents_text"
+        android:textColorHint="@color/contents_text"
+        android:textSize="@dimen/fond_14sp" />
+
+    <EditText
+        android:id="@+id/Enterprise_credit_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/shape_corner"
+        android:hint="信用代码"
+        android:padding="@dimen/dip_5"
+        android:paddingLeft="@dimen/dip_10"
+        android:textColor="@color/contents_text"
+        android:textColorHint="@color/contents_text"
+        android:textSize="@dimen/fond_14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_10"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Enterprise_Data_address"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dip_10"
+            android:layout_weight="8"
+            android:background="@drawable/shape_corner"
+            android:hint="详细地址"
+            android:padding="@dimen/dip_5"
+            android:textColor="@color/contents_text"
+            android:textColorHint="@color/contents_text"
+            android:textSize="@dimen/fond_14sp" />
+
+        <ImageView
+            android:layout_width="@dimen/dip_25"
+            android:layout_height="@dimen/dip_25"
+            android:background="@mipmap/icon_dituxx"
+            android:padding="@dimen/dip_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/shape_corner"
+        android:orientation="horizontal"
+        android:padding="@dimen/dip_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dip_5"
+            android:paddingLeft="@dimen/dip_10"
+            android:text="固话"
+            android:textColor="@color/contents_text" />
+
+        <EditText
+            android:id="@+id/rg_guhua"
+            android:layout_width="@dimen/dip_60"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/down_icon"
+            android:drawablePadding="@dimen/dip_5"
+            android:text="区号"
+            android:textColor="@color/contents_text" />
+
+        <EditText
+            android:id="@+id/rg_quhao"
+            android:layout_width="@dimen/dip_60"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/down_icon"
+            android:drawablePadding="@dimen/dip_5"
+            android:text="分机"
+            android:textColor="@color/contents_text" />
+        <EditText
+            android:id="@+id/rg_fenji"
+            android:layout_width="@dimen/dip_60"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/Enterprise_Data_education_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/shape_corner"
+        android:hint="教育类型"
+        android:padding="@dimen/dip_5"
+        android:paddingLeft="@dimen/dip_10"
+        android:textColor="@color/contents_text"
+        android:textColorHint="@color/contents_text"
+        android:textSize="@dimen/fond_14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/Enterprise_Data_p1"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/dip_80"
+            android:layout_marginLeft="@dimen/dip_20"
+            android:layout_marginRight="@dimen/dip_10"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/Enterprise_Data_iv1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_80"
+                android:background="@mipmap/icon_shangc" />
+
+            <TextView
+                android:id="@+id/Enterprise_Data_t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="@dimen/dip_10"
+                android:text="法人身份证正面"
+                android:textColor="@color/contents_text"
+                android:textSize="@dimen/fond_12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Enterprise_Data_p2"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/dip_80"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginRight="@dimen/dip_10"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/Enterprise_Data_iv2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_80"
+                android:background="@mipmap/icon_shangc" />
+
+            <TextView
+                android:id="@+id/Enterprise_Data_t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="@dimen/dip_10"
+                android:text="法人身份证背面"
+                android:textColor="@color/contents_text"
+                android:textSize="@dimen/fond_12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Enterprise_Data_p3"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/dip_80"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginRight="@dimen/dip_10"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/Enterprise_Data_iv3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip_80"
+                android:background="@mipmap/icon_shangc" />
+
+            <TextView
+                android:id="@+id/Enterprise_Data_t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="@dimen/dip_10"
+                android:text="营业执照"
+                android:textColor="@color/contents_text"
+                android:textSize="@dimen/fond_12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dip_20"
+        android:text="注：平台会保护会员隐私，不会透露个人隐私，并承担法律义务"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dip_12" />
+
+    <Button
+        android:id="@+id/Enterprise_Data_zhuce"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip_40"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:background="@drawable/btn_registerselector"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fond_16sp" />
+
+</LinearLayout>

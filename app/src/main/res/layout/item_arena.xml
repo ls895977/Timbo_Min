@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_1"
+        android:layout_marginRight="@dimen/dip_1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dip_2"
+        android:paddingLeft="@dimen/dip_5"
+        android:paddingRight="@dimen/dip_2"
+        android:paddingTop="@dimen/dip_5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_5">
+
+            <TextView
+                android:id="@+id/item_arena_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="极限跳绳"
+                android:textColor="@color/fond_cloer"
+                android:textSize="@dimen/fond_12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@mipmap/icon_see"
+                android:drawablePadding="@dimen/dip_2"
+                android:text="1256"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/fond_12sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/arena_hader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_160"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_c1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/item_profile_image"
+                    android:layout_width="@dimen/dip_30"
+                    android:layout_height="@dimen/dip_30"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:layout_marginTop="@dimen/dip_5"
+                    android:src="@mipmap/icon_hader" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item_profile_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dip_5"
+                        android:text="刘二萌   10岁"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/fond_10sp" />
+
+                    <TextView
+                        android:id="@+id/item_profile_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dip_5"
+                        android:paddingTop="@dimen/dip_5"
+                        android:text="參與552人"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/fond_10sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_arenatonclick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:background="@drawable/btn_bg_normal11"
+                android:paddingBottom="@dimen/dip_2"
+                android:paddingLeft="@dimen/dip_2"
+                android:paddingRight="@dimen/dip_5"
+                android:paddingTop="@dimen/dip_2"
+                android:text="发起挑战"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_1"
+            android:layout_marginTop="@dimen/dip_5"
+            android:background="#f4f4f4" />
+    </LinearLayout>
+
+</RelativeLayout>
