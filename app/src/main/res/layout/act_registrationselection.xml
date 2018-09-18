@@ -11,8 +11,9 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/rg_back"
+            android:id="@+id/rgt_back"
             android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dip_15"
             android:layout_height="wrap_content"
             android:padding="@dimen/dip_15"
             android:src="@mipmap/back_icon" />

@@ -23,6 +23,7 @@ public class Act_RegistrationSelection extends BaseAct {
         setOnClickListener(R.id.I_am_a_student);
         setOnClickListener(R.id.Teacher);
         setOnClickListener(R.id.mechanism);
+        setOnClickListener(R.id.rgt_back);
     }
 
     @Override
@@ -54,6 +55,9 @@ public class Act_RegistrationSelection extends BaseAct {
             case R.id.mechanism://我是机构
                 aCache.put("type","2");
                 startAct(Act_Enterprise_Registration.class);
+                break;
+            case R.id.rgt_back:
+                finish();
                 break;
         }
     }
