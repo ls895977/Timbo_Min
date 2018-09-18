@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.util.ArrayMap;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.TextView;
 
 import com.example.lishan.timbo_min.R;
 import com.example.lishan.timbo_min.adapter.MemberGridAdapter;
@@ -51,6 +52,7 @@ public class Fgt_Member extends BaseFgt implements AdapterView.OnItemClickListen
     private String[] name = {"积分 500", "金豆850", "签到记录", "我的关注", "成长记录", "我的评论", "我的计划", "我的班级", "体型检测"
             , "活动记录", "我的PK", "我的技能", "我的收藏", "我的课堂", "积分收藏", "家  长  帮", "报名管理", "优惠卷", "备忘录", "消息中心", "用户退出", "系统信息"};
     private ACache aCache;
+    private TextView statis, signInLeft, signInRight;
 
     @Override
     public void sendMsg(int flag, Object obj) {
@@ -68,6 +70,9 @@ public class Fgt_Member extends BaseFgt implements AdapterView.OnItemClickListen
         setOnClickListener(R.id.member_fanhui);
         myGridView = getView(R.id.memberGridview);
         setOnClickListener(R.id.my_hader);
+        statis = getViewAndClick(R.id.member_SignIn_Statics);
+        signInLeft = getView(R.id.member_SignIn_Left);
+        signInRight = getView(R.id.member_SignIn_Right);
     }
 
     private List<MemberBean> datas;
@@ -106,6 +111,9 @@ public class Fgt_Member extends BaseFgt implements AdapterView.OnItemClickListen
                 break;
             case R.id.my_hader:
                 startAct(Act_PersonalData.class);
+                break;
+            case R.id.member_SignIn_Statics://签到问题
+                SignInStitic();
                 break;
         }
     }
@@ -163,7 +171,7 @@ public class Fgt_Member extends BaseFgt implements AdapterView.OnItemClickListen
             case 15://家长帮
                 startAct(Act_Parent.class);
                 break;
-            case 18://优惠劵
+            case 17://优惠劵
                 startAct(Act_Coupons.class);
                 break;
             case 20://退出
@@ -185,6 +193,7 @@ public class Fgt_Member extends BaseFgt implements AdapterView.OnItemClickListen
             public void onSuccess(Response<String> response) {
                 Debug.e("----onSuccess---------" + response.body());
             }
+
             @Override
             public void onError(Response<String> response) {
                 Debug.e("----onError---------" + response.body());

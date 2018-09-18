@@ -21,7 +21,7 @@ public class Act_Coupons extends BaseAct {
 
     @Override
     public void initData() {
-
+        hideHeader();
     }
 
     @Override

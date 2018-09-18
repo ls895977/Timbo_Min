@@ -4,18 +4,16 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical">
-
     <RelativeLayout
+        android:layout_marginTop="@dimen/dip_15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <ImageView
             android:id="@+id/coupons_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/dip_10"
             android:src="@mipmap/icon_hui" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,7 +21,6 @@
             android:layout_centerVertical="true"
             android:text="优惠劵"
             android:textSize="@dimen/fond_18sp" />
-
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
