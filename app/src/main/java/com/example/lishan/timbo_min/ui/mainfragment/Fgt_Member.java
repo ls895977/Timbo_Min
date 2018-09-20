@@ -71,7 +71,7 @@ public class Fgt_Member extends BaseFgt implements AdapterView.OnItemClickListen
         myGridView = getView(R.id.memberGridview);
         setOnClickListener(R.id.my_hader);
         statis = getViewAndClick(R.id.member_SignIn_Statics);
-        signInLeft = getView(R.id.member_SignIn_Left);
+//        signInLeft = getView(R.id.member_SignIn_Left);
         signInRight = getView(R.id.member_SignIn_Right);
     }
 
