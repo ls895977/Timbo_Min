@@ -6,7 +6,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.lishan.timbo_min.R;
+import com.example.lishan.timbo_min.bean.HealthpageGridBean;
 import com.example.lishan.timbo_min.bean.HomGrdBean;
 import com.lykj.aextreme.afinal.adapter.BaseAdapter;
 
@@ -17,9 +19,9 @@ import java.util.List;
  */
 
 public class HealthpageGridAdagper extends BaseAdapter {
-    List<HomGrdBean> datas;
+    List<HealthpageGridBean.DataBean> datas;
 
-    public void setDatas(List<HomGrdBean> datas) {
+    public void setDatas(List<HealthpageGridBean.DataBean> datas) {
         this.datas = datas;
     }
 
@@ -52,9 +54,9 @@ public class HealthpageGridAdagper extends BaseAdapter {
         } else {
             vIewHolder = (VIewHolder) convertView.getTag();
         }
-        HomGrdBean item = datas.get(i);
-        vIewHolder.name.setText(item.getName());
-        vIewHolder.image.setImageResource(item.getImages());
+        HealthpageGridBean.DataBean item = datas.get(i);
+        vIewHolder.name.setText(item.getCate_name());
+        Glide.with(getContext()).load(item.getImg()).placeholder(R.mipmap.icon_xx).into(vIewHolder.image);
         return convertView;
     }
 

@@ -216,8 +216,9 @@ public class Fgt_home extends BaseFgt implements HomeGridAdapter.backItem {
         Intent intent = new Intent();
         switch (position) {
             case 0://成长咨询
-                intent.putExtra("indext", 7);
-                startAct(intent, MyWebView.class);
+//                intent.putExtra("indext", 7);
+//                startAct(intent, MyWebView.class);
+                startAct(intent, Act_HealthPage.class);
                 break;
             case 1://亲子活动
                 intent.putExtra("indext", 8);

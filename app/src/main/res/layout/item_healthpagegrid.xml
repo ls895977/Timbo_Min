@@ -6,17 +6,18 @@
 
     <ImageView
         android:id="@+id/item_healthpagergrid1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/dip_80"
+        android:layout_height="@dimen/dip_80"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/dip_10"
-        android:background="@mipmap/icon_xx" />
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/dip_10" />
 
     <TextView
         android:id="@+id/item_healthpagergrid2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:textSize="@dimen/fond_16sp"
         android:padding="@dimen/dip_10"
         android:text="营养菜肴" />
 </LinearLayout>
