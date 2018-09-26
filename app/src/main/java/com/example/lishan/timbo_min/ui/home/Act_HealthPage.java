@@ -61,7 +61,6 @@ public class Act_HealthPage extends BaseAct implements AdapterView.OnItemClickLi
         myGridView.setOnItemClickListener(this);
         aCache=ACache.get(context);
     }
-
     @Override
     public void initData() {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -70,7 +69,6 @@ public class Act_HealthPage extends BaseAct implements AdapterView.OnItemClickLi
         mRecyclerView.setRefreshProgressStyle(ProgressStyle.BallSpinFadeLoader);
         mRecyclerView.setLoadingMoreProgressStyle(ProgressStyle.BallRotate);
         mRecyclerView.setArrowImageView(R.drawable.iconfont_downgrey);
-
         mRecyclerView
                 .getDefaultRefreshHeaderView()
                 .setRefreshTimeVisible(true);

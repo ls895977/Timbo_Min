@@ -7,6 +7,14 @@ import com.lzy.okgo.callback.FileCallback;
 import com.lzy.okgo.callback.StringCallback;
 import com.lzy.okgo.model.Progress;
 import com.lzy.okgo.model.Response;
+import com.yanzhenjie.nohttp.FileBinary;
+import com.yanzhenjie.nohttp.Headers;
+import com.yanzhenjie.nohttp.NoHttp;
+import com.yanzhenjie.nohttp.RequestMethod;
+import com.yanzhenjie.nohttp.rest.OnResponseListener;
+import com.yanzhenjie.nohttp.rest.Request;
+import com.yanzhenjie.nohttp.rest.RequestQueue;
+import com.yanzhenjie.nohttp.rest.StringRequest;
 
 import org.json.JSONObject;
 
@@ -68,9 +76,7 @@ public class HttpReqest {
                 onBack.onSuccess(response);
             }
         });
-
     }
-
     public void HttpGet(String url, Map<String, String> params, BackString onBack1) {
         this.onBack = onBack1;
         Debug.e("url----" + ComantUtils.MyUrl + url);
@@ -88,21 +94,23 @@ public class HttpReqest {
         });
 
     }
+    /**
+     * 上传文件
+     * @param url
+     * @param file
+     */
+    public void PosFile(String key,String url, File file,BackString onBack1) {
+        onBack=onBack1;
+        OkGo.<String>post(ComantUtils.MyUrl + url).params(key,file).tag(this).execute(new StringCallback() {
+            @Override
+            public void onSuccess(Response<String> response) {
+                onBack.onSuccess(response);
+            }
 
-    public void GetFile(String url) {
-        OkGo.<File>get(url)
-                .tag(this)
-                .execute(new FileCallback() {
-                    @Override
-                    public void onSuccess(Response<File> response) {
-
-                    }
-
-                    @Override
-                    public void downloadProgress(Progress progress) {
-                        super.downloadProgress(progress);
-                        Debug.e("--------" + progress);
-                    }
-                });
+            @Override
+            public void onError(Response<String> response) {
+                onBack.onError(response);
+            }
+        });
     }
 }

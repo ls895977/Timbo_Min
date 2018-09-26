@@ -74,9 +74,7 @@ public class Fgt_Member extends BaseFgt implements AdapterView.OnItemClickListen
 //        signInLeft = getView(R.id.member_SignIn_Left);
         signInRight = getView(R.id.member_SignIn_Right);
     }
-
     private List<MemberBean> datas;
-
     @Override
     public void initData() {
         datas = new ArrayList<>();

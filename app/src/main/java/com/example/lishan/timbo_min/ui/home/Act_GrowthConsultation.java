@@ -17,16 +17,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * 成长咨询列表页
  * Created by lishan on 2017/12/20.
  */
 
 public class Act_GrowthConsultation extends BaseAct implements HealthPageListAdapter.OnItem {
     private String title;
-    private TextView tv_title;
     private RecyclerView myRecyclerView;
     private RelativeLayout showRelat;
     private ImageView banwenhao;
+    private TextView tvTitle;
 
     @Override
     public int initLayoutId() {
@@ -35,8 +35,14 @@ public class Act_GrowthConsultation extends BaseAct implements HealthPageListAda
 
     @Override
     public void initView() {
+        hideHeader();
         title = getIntent().getStringExtra("title");
-        initchatTitle(title, R.mipmap.icon_fen);
+        tvTitle = getView(R.id.growthconsultation_title);
+        tvTitle.setText(title);
+        setOnClickListener(R.id.growthconsultation_back);
+        setOnClickListener(R.id.growthconsultation_right);
+
+
         myRecyclerView = getView(R.id.growth_recyclerview);
         HealthPageListAdapter healthpageAdapter = new HealthPageListAdapter(this);
         healthpageAdapter.setContext(this);
@@ -90,6 +96,12 @@ public class Act_GrowthConsultation extends BaseAct implements HealthPageListAda
             case R.id.growth_banwenhao://半问号
                 banwenhao.setVisibility(View.GONE);
                 showRelat.setVisibility(View.VISIBLE);
+                break;
+            case R.id.growthconsultation_back:
+                finish();
+                break;
+            case R.id.growthconsultation_right://右边按钮
+
                 break;
         }
     }

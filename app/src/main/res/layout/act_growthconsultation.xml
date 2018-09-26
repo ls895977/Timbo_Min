@@ -15,6 +15,34 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dip_20">
+
+                <ImageView
+                    android:id="@+id/growthconsultation_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dip_10"
+                    android:src="@mipmap/icon_hui" />
+
+                <TextView
+                    android:id="@+id/growthconsultation_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/dip_10"
+                    android:textSize="@dimen/fond_18sp" />
+
+                <ImageView
+                    android:id="@+id/growthconsultation_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dip_10"
+                    android:src="@mipmap/icon_fen" />
+            </RelativeLayout>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -139,7 +167,6 @@
             android:layout_alignParentBottom="true"
             android:alpha="0.9"
             android:background="@color/white">
-
             <ImageView
                 android:id="@+id/growth_chacha"
                 android:layout_width="@dimen/dip_20"
