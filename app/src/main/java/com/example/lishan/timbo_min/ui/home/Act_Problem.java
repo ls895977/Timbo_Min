@@ -17,6 +17,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bigkoo.svprogresshud.SVProgressHUD;
@@ -25,6 +26,8 @@ import com.example.lishan.timbo_min.adapter.BusinessShopGridAdapter;
 import com.example.lishan.timbo_min.adapter.HealthpageGridAdagper;
 import com.example.lishan.timbo_min.adapter.ProblemGridAdapter;
 import com.example.lishan.timbo_min.bean.HealthpageGridBean;
+import com.example.lishan.timbo_min.bean.ProblemFileBean;
+import com.example.lishan.timbo_min.bean.ProblemImgBean;
 import com.example.lishan.timbo_min.common.BaseAct;
 import com.example.lishan.timbo_min.common.ComantUtils;
 import com.example.lishan.timbo_min.dialog.Dlg_PhotoAlbum;
@@ -34,6 +37,7 @@ import com.example.lishan.timbo_min.httppost.HttpReqest;
 import com.example.lishan.timbo_min.permission.RxPermissions;
 import com.example.lishan.timbo_min.view.MyGridView;
 import com.google.gson.Gson;
+import com.lykj.aextreme.afinal.utils.ACache;
 import com.lykj.aextreme.afinal.utils.Debug;
 import com.lykj.aextreme.afinal.utils.MyToast;
 import com.lzy.okgo.model.Response;
@@ -52,6 +56,7 @@ import top.zibin.luban.Luban;
 import top.zibin.luban.OnCompressListener;
 
 /**
+ * 或者提问
  * Created by lishan on 2017/12/20.
  */
 
@@ -64,6 +69,10 @@ public class Act_Problem extends BaseAct implements AdapterView.OnItemClickListe
     private Dlg_Photograph photo;
     private MyGridView myGridView;
     private RxPermissions rxPermissions;
+    private ACache aCache;
+    private TextView title, tVcontext;
+    private List<ProblemImgBean> datas = new ArrayList<>();
+    private int indext;
 
     @Override
     public int initLayoutId() {
@@ -77,13 +86,18 @@ public class Act_Problem extends BaseAct implements AdapterView.OnItemClickListe
         mSVProgressHUD = new SVProgressHUD(this);
         mySpinner = getView(R.id.problem_spinner);
         setOnClickListener(R.id.problem_classification);
+        title = getView(R.id.problem_title);
+        tVcontext = getView(R.id.problem_context);
     }
 
     private BusinessShopGridAdapter adapter;
     List<File> Carmer_file;
+    private int position1 = 0;
 
     @Override
     public void initData() {
+        indext = Integer.valueOf(getIntent().getStringExtra("indext"));
+        aCache = ACache.get(this);
         rxPermissions = new RxPermissions(this);
         mSVProgressHUD.showWithStatus("请稍后...");
         photo = new Dlg_Photograph(this, Act_Problem.this);
@@ -102,6 +116,7 @@ public class Act_Problem extends BaseAct implements AdapterView.OnItemClickListe
             @Override
             public void onItemSelected(AdapterView<?> parent, View view,
                                        int position, long id) {
+                position1 = position;
                 MyToast.show(context, bean.getData().get(position).getCate_name());
             }
 
@@ -125,6 +140,7 @@ public class Act_Problem extends BaseAct implements AdapterView.OnItemClickListe
     public void onViewClick(View v) {
         switch (v.getId()) {
             case R.id.bt_problem://提交
+                subMit();
                 break;
         }
     }
@@ -138,6 +154,7 @@ public class Act_Problem extends BaseAct implements AdapterView.OnItemClickListe
             return;
         }
         photo.show();
+        tvPo = position;
     }
 
 
@@ -164,6 +181,7 @@ public class Act_Problem extends BaseAct implements AdapterView.OnItemClickListe
                 //加载适配器
                 mySpinner.setAdapter(arr_adapter);
                 mSVProgressHUD.dismiss();
+                mySpinner.setSelection(indext);
             }
 
             @Override
@@ -173,12 +191,12 @@ public class Act_Problem extends BaseAct implements AdapterView.OnItemClickListe
         });
     }
 
+    private int tvPo = 0;
 
     @Override
     public void onBackImgShut(int position) {
         Carmer_file.remove(position);
         if (Carmer_file.get(Carmer_file.size() - 1).getPath().equals("")) {
-
         } else {
             if (Carmer_file.size() < 8) {
                 File file1 = new File("");
@@ -187,7 +205,6 @@ public class Act_Problem extends BaseAct implements AdapterView.OnItemClickListe
         }
         adapter.notifyDataSetChanged();
     }
-
     @Override
     public void onItem(final int p) {
         rxPermissions
@@ -288,6 +305,8 @@ public class Act_Problem extends BaseAct implements AdapterView.OnItemClickListe
     /**
      * 返回结果做图片压缩
      */
+    File lubanFile;
+
     public void backCarme(File file) {
 //新建一个File，传入文件夹目录
         File file1 = new File(Environment.getExternalStorageDirectory(), "mywork");
@@ -296,6 +315,7 @@ public class Act_Problem extends BaseAct implements AdapterView.OnItemClickListe
             //通过file的mkdirs()方法创建目录中包含却不存在的文件夹
             file1.mkdirs();
         }
+        mSVProgressHUD.showWithStatus("上传中...");
         Luban.with(this)
                 .load(file)
                 .ignoreBy(100)
@@ -314,13 +334,8 @@ public class Act_Problem extends BaseAct implements AdapterView.OnItemClickListe
 
                     @Override
                     public void onSuccess(File file) {
-                        Carmer_file.add(0, file);
-                        if (Carmer_file.size() == 5) {
-                            Carmer_file.remove(Carmer_file.size() - 1);
-                        }
-                        adapter.setChannel_info(Carmer_file);
-                        httpReqest.PosFile("grow_new", "i=1&c=entry&do=upload&m=ted_users", file, FileBack);
-                        adapter.notifyDataSetChanged();
+                        lubanFile = file;
+                        httpReqest.PosFile("file", "i=1&c=entry&do=upload&m=ted_users", file, FileBack);
                     }
 
                     @Override
@@ -333,15 +348,70 @@ public class Act_Problem extends BaseAct implements AdapterView.OnItemClickListe
     /**
      * 文件上传接口返回值
      */
+    ProblemFileBean fileBean1;
     BackString FileBack = new BackString() {
         @Override
         public void onSuccess(Response<String> response) {
-            Debug.e("-File---onSuccess-------" + response.body());
+            fileBean1 = gson.fromJson(response.body(), ProblemFileBean.class);
+            Carmer_file.add(0, lubanFile);
+            ProblemImgBean imgBean = new ProblemImgBean(String.valueOf(tvPo), fileBean1.getData().getUrl());
+            datas.add(0, imgBean);
+            if (Carmer_file.size() == 5) {
+                datas.remove(datas.size() - 1);
+                Carmer_file.remove(Carmer_file.size() - 1);
+            }
+            adapter.setChannel_info(Carmer_file);
+            adapter.notifyDataSetChanged();
+            mSVProgressHUD.dismiss();
+            MyToast.show(context, "上传成功！");
         }
 
         @Override
         public void onError(Response<String> response) {
             Debug.e("-File---response-------" + response.body());
+            mSVProgressHUD.dismiss();
         }
     };
+
+    /**
+     * 提交数据
+     */
+
+    public void subMit() {
+        if (TextUtils.isEmpty(title.getText().toString())) {
+            MyToast.show(context, "请输入标题");
+            return;
+        }
+        if (TextUtils.isEmpty(tVcontext.getText().toString())) {
+            MyToast.show(context, "请输入内容");
+            return;
+        }
+        mSVProgressHUD.showWithStatus("提交中...");
+        Debug.e("-----" + gson.toJson(datas));
+        HashMap<String, String> body = new HashMap<>();
+        body.put("user_token", aCache.getAsString("User_token"));
+        body.put("grow_news_img", gson.toJson(datas));
+        body.put("cate_id", bean.getData().get(position1).getCate_id());
+        body.put("article_title", title.getText().toString());//标题
+        body.put("content", tVcontext.getText().toString());//内容
+        body.put("province", "四川省");//省
+        body.put("city", "宜宾市");//市
+        httpReqest.HttpPost("i=1&c=entry&do=publish_grow_news&m=ted_users", body, new BackString() {
+            @Override
+            public void onSuccess(Response<String> response) {
+                if (response.body().contains("200")) {
+                    MyToast.show(context, "提交成功！");
+                    setResult(10);
+                    finish();
+                }
+                mSVProgressHUD.dismiss();
+            }
+
+            @Override
+            public void onError(Response<String> response) {
+                mSVProgressHUD.dismiss();
+            }
+        });
+
+    }
 }

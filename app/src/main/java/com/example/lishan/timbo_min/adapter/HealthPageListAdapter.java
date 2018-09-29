@@ -7,7 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.lishan.timbo_min.R;
 import com.example.lishan.timbo_min.bean.HealthPagerListBean;
 
@@ -19,21 +21,19 @@ import java.util.List;
 
 public class HealthPageListAdapter extends RecyclerView.Adapter<HealthPageListAdapter.ViewHolder> {
     private Context context;
-    private List<HealthPagerListBean> datas;
+    private List<HealthPagerListBean.DataBean> datas;
     private OnItem onItem1;
-   public HealthPageListAdapter(OnItem onItem){
-       this.onItem1=onItem;
-   };
-    public void setDatas(List<HealthPagerListBean> datas) {
+    public HealthPageListAdapter(OnItem onItem) {
+        this.onItem1 = onItem;
+    }
+    public void setDatas(List<HealthPagerListBean.DataBean> datas) {
         this.datas = datas;
     }
 
     public void setContext(Context context) {
         this.context = context;
     }
-
     @Override
-
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         ViewHolder viewHolder = new ViewHolder(LayoutInflater.from(context).inflate(R.layout.item_healthpagerlist, parent, false));
         return viewHolder;
@@ -41,22 +41,29 @@ public class HealthPageListAdapter extends RecyclerView.Adapter<HealthPageListAd
 
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
-        HealthPagerListBean item = datas.get(position);
-        switch (item.getName()) {
-            case "1":
-                holder.myImage.setVisibility(View.VISIBLE);
-                break;
-            case "2":
-                holder.myImage.setVisibility(View.GONE);
-                break;
-        }
+        HealthPagerListBean.DataBean item = datas.get(position);
+//        switch (item.getName()) {
+//            case "1":
+//                holder.myImage.setVisibility(View.VISIBLE);
+//                break;
+//            case "2":
+//                holder.myImage.setVisibility(View.GONE);
+//                break;
+//        }
         holder.myLinearlayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onItem1.clickView(view, position);
             }
         });
-
+        Glide.with(context).load(item.getImg()).into(holder.myImage);
+        if(item.getArticle_title()==null){
+            return;
+        }
+        holder.healthTItle.setText(item.getArticle_title());
+        holder.date.setText(item.getCreate_date());
+        holder.tvContext.setText(item.getContent_text());
+        holder.name.setText(item.getUserinfo().getNickname());
     }
 
     @Override
@@ -67,15 +74,21 @@ public class HealthPageListAdapter extends RecyclerView.Adapter<HealthPageListAd
     class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView myImage;
         private LinearLayout myLinearlayout;
+        private TextView healthTItle, date, tvContext,name;
 
         public ViewHolder(View itemView) {
             super(itemView);
             myImage = (ImageView) itemView.findViewById(R.id.item_healthpagerlistimage);
             myLinearlayout = (LinearLayout) itemView.findViewById(R.id.mhealthageritem);
+            healthTItle = (TextView) itemView.findViewById(R.id.item_healthpager_title);
+            date = (TextView) itemView.findViewById(R.id.item_healthpager_date);
+            tvContext = (TextView) itemView.findViewById(R.id.item_healthpager_context);
+            name= (TextView) itemView.findViewById(R.id.item_healthpager_name);
+
         }
     }
 
-   public interface OnItem {
+    public interface OnItem {
         void clickView(View view, int position);
     }
 }

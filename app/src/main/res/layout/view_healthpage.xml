@@ -31,6 +31,7 @@
             android:background="@mipmap/icon_fa" />
 
         <EditText
+            android:id="@+id/healthpage_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dip_30"
@@ -38,6 +39,7 @@
             android:padding="@dimen/dip_5" />
 
         <ImageView
+            android:id="@+id/healthpage_shutdown"
             android:layout_width="@dimen/dip_20"
             android:layout_height="@dimen/dip_20"
             android:layout_alignParentRight="true"

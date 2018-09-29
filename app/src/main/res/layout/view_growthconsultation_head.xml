@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_m1" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_20"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dip_5"
+            android:background="@mipmap/icon_fa" />
+
+        <EditText
+            android:id="@+id/growth__search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_30"
+            android:background="@null"
+            android:padding="@dimen/dip_5" />
+
+        <ImageView
+            android:id="@+id/growth__shutdown"
+            android:layout_width="@dimen/dip_20"
+            android:layout_height="@dimen/dip_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dip_5"
+            android:background="@mipmap/icon_guan" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_5"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/growThconsulTation_newest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_zx"
+            android:drawablePadding="@dimen/dip_5"
+            android:padding="@dimen/dip_10"
+            android:text="最新"
+            android:textColor="@color/fond_cloer"
+            android:textSize="@dimen/fond_14sp" />
+
+        <TextView
+            android:id="@+id/growThconsulTation_Hottest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_ka"
+            android:drawablePadding="@dimen/dip_5"
+            android:padding="@dimen/dip_10"
+            android:text="最热"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/fond_14sp" />
+
+        <TextView
+            android:id="@+id/growThconsulTation_hot_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_lun"
+            android:drawablePadding="@dimen/dip_5"
+            android:padding="@dimen/dip_10"
+            android:text="热评"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/fond_14sp" />
+    </LinearLayout>
+</LinearLayout>

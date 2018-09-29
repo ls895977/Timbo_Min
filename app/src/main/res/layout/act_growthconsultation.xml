@@ -2,151 +2,55 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
-        android:fillViewport="true"
-        android:scrollbars="none">
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dip_20">
+
+            <ImageView
+                android:id="@+id/growthconsultation_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dip_10"
+                android:src="@mipmap/icon_hui" />
+
+            <TextView
+                android:id="@+id/growthconsultation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/dip_10"
+                android:textSize="@dimen/fond_18sp" />
+
+            <ImageView
+                android:id="@+id/growthconsultation_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dip_10"
+                android:src="@mipmap/icon_fen" />
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_10"
+            android:background="#f5f5f5">
 
-            <RelativeLayout
+            <com.jcodecraeer.xrecyclerview.XRecyclerView
+                android:id="@+id/growth_recyclerview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/dip_20">
-
-                <ImageView
-                    android:id="@+id/growthconsultation_back"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/dip_10"
-                    android:src="@mipmap/icon_hui" />
-
-                <TextView
-                    android:id="@+id/growthconsultation_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:paddingTop="@dimen/dip_10"
-                    android:textSize="@dimen/fond_18sp" />
-
-                <ImageView
-                    android:id="@+id/growthconsultation_right"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:padding="@dimen/dip_10"
-                    android:src="@mipmap/icon_fen" />
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@mipmap/icon_m1" />
-
-
-
-            <RelativeLayout
-                android:layout_marginTop="@dimen/dip_20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/dip_20"
-                android:layout_marginRight="@dimen/dip_20"
-                android:background="#f7f7f7">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dip_5"
-                    android:background="@mipmap/icon_fa" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dip_30"
-                    android:background="@null"
-                    android:padding="@dimen/dip_5" />
-
-                <ImageView
-                    android:layout_width="@dimen/dip_20"
-                    android:layout_height="@dimen/dip_20"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="@dimen/dip_5"
-                    android:layout_centerVertical="true"
-                    android:background="@mipmap/icon_guan" />
-            </RelativeLayout>
-            <LinearLayout
-                android:orientation="horizontal"
+                android:layout_margin="@dimen/dip_10"
                 android:background="@color/white"
-                android:layout_marginTop="@dimen/dip_5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                android:padding="@dimen/dip_10"
-                android:layout_width="wrap_content"
-                android:textSize="@dimen/fond_14sp"
-                android:drawablePadding="@dimen/dip_5"
-                android:drawableLeft="@mipmap/icon_zx"
-                android:text="最新"
-                android:textColor="@color/fond_cloer"
-                android:layout_height="wrap_content" />
-
-                <TextView
-                    android:padding="@dimen/dip_10"
-                    android:layout_width="wrap_content"
-                    android:textSize="@dimen/fond_14sp"
-                    android:drawablePadding="@dimen/dip_5"
-                    android:drawableLeft="@mipmap/icon_ka"
-                    android:text="最热"
-                    android:textColor="@color/gray"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:padding="@dimen/dip_10"
-                    android:layout_width="wrap_content"
-                    android:textSize="@dimen/fond_14sp"
-                    android:drawablePadding="@dimen/dip_5"
-                    android:drawableLeft="@mipmap/icon_lun"
-                    android:text="热评"
-                    android:textColor="@color/gray"
-                    android:layout_height="wrap_content" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dip_10"
-                android:background="#f5f5f5">
-
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/growth_recyclerview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/dip_10"
-                    android:background="@color/white"
-                    android:divider="#ffff0000" />
-
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@mipmap/icon_zwt" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/dip_80"
-                android:layout_marginTop="@dimen/dip_20"
-                android:gravity="center"
-                android:text="版权所有：微聚赢网络科技有限公司" />
+                android:divider="#ffff0000" />
         </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/growth_show"
@@ -167,6 +71,7 @@
             android:layout_alignParentBottom="true"
             android:alpha="0.9"
             android:background="@color/white">
+
             <ImageView
                 android:id="@+id/growth_chacha"
                 android:layout_width="@dimen/dip_20"
@@ -179,10 +84,10 @@
     </RelativeLayout>
     <ImageView
         android:id="@+id/growth_banwenhao"
-        android:visibility="gone"
-        android:layout_marginBottom="@dimen/dip_20"
-        android:layout_alignParentBottom="true"
-        android:background="@mipmap/icon_banwenhao"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dip_20"
+        android:background="@mipmap/icon_banwenhao"
+        android:visibility="gone" />
 </RelativeLayout>
