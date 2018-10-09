@@ -2,57 +2,72 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_marginLeft="@dimen/dip_20"
-        android:layout_marginRight="@dimen/dip_20"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dip_20">
 
-        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/profile_image"
-            android:layout_width="@dimen/dip_30"
-            android:layout_height="@dimen/dip_30"
-            android:src="@mipmap/icon_hader"
-            app:civ_border_color="#FF000000"
-            app:civ_border_width="0dp" />
+        <ImageView
+            android:id="@+id/iKnow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:src="@mipmap/icon_hui" />
 
         <TextView
+            android:id="@+id/iKnow_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/dip_10"
+            android:text="我知道"
+            android:textSize="@dimen/fond_18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/IKnow_image"
+            android:layout_width="@dimen/dip_30"
+            android:layout_height="@dimen/dip_30"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0dp" />
+        <TextView
+            android:id="@+id/IKnow_nickName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/dip_5"
-            android:layout_toRightOf="@+id/profile_image"
             android:text="萌萌" />
-
     </RelativeLayout>
-
     <TextView
-        android:layout_width="match_parent"
-        android:layout_marginLeft="@dimen/dip_20"
-        android:layout_marginRight="@dimen/dip_20"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/dip_5"
-        android:text="中国吃在在在寺地脍仍需仍需仍需仍需仍需你feqe坎坷qwefqwefqwefqwef锊qwef仍需釜qwef地" />
-
-    <TextView
+        android:id="@+id/IKnow_contentText"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/dip_20"
         android:layout_marginRight="@dimen/dip_20"
-        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dip_10"
         android:text="我的回答"
         android:textColor="@color/fond_cloer"
         android:textSize="@dimen/fond_18sp" />
 
     <RelativeLayout
-        android:layout_marginLeft="@dimen/dip_20"
-        android:layout_marginRight="@dimen/dip_20"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_10"
+        android:layout_marginLeft="@dimen/dip_20"
+        android:layout_marginRight="@dimen/dip_20">
 
-        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/profile_image1"
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/IKnow_myHader"
             android:layout_width="@dimen/dip_30"
             android:layout_height="@dimen/dip_30"
             android:src="@mipmap/icon_hader"
@@ -60,25 +75,27 @@
             app:civ_border_width="0dp" />
 
         <TextView
+            android:id="@+id/IKnow_myNickName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/dip_5"
-            android:layout_toRightOf="@+id/profile_image1"
+            android:layout_toRightOf="@+id/IKnow_myHader"
             android:text="老乔" />
-
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dip_5"
         android:layout_marginLeft="@dimen/dip_20"
         android:layout_marginRight="@dimen/dip_20"
+        android:layout_marginTop="@dimen/dip_10"
         android:background="@drawable/fillet"
         android:orientation="horizontal"
         android:padding="@dimen/dip_10">
 
         <EditText
+            android:id="@+id/IKnow_Answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@null"
@@ -90,7 +107,6 @@
             android:minLines="4"
             android:scrollbars="vertical" />
     </RelativeLayout>
-
     <GridView
         android:id="@+id/i_know_gridView"
         android:layout_width="match_parent"
@@ -98,9 +114,8 @@
         android:layout_marginLeft="@dimen/dip_10"
         android:layout_marginRight="@dimen/dip_10"
         android:numColumns="4" />
-
     <TextView
-        android:id="@+id/bt_problem"
+        android:id="@+id/i_know_problem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/dip_20"
@@ -111,13 +126,11 @@
         android:text="提交"
         android:textColor="@color/white"
         android:textSize="@dimen/fond_16sp" />
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dip_15"
         android:background="@mipmap/icon_zwt" />
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

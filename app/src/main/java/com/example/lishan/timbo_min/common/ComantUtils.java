@@ -28,7 +28,10 @@ public class ComantUtils {
      *  成长资讯列表
      */
     public static String Basning_ted_grow_news_List_Url = "i=1&c=entry&do=list&m=ted_grow_news";
-
+    /**
+     * 成长咨询详情
+     */
+    public static String Details_Growth="i=1&c=entry&do=detail&m=ted_grow_news";
 
 
 

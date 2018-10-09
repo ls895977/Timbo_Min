@@ -1,17 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <LinearLayout
-        android:paddingBottom="@dimen/dip_10"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/dip_10"
-        android:layout_marginRight="@dimen/dip_10"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dip_20">
+
+        <ImageView
+            android:id="@+id/healthpage_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip_10"
+            android:src="@mipmap/icon_hui" />
 
         <TextView
+            android:id="@+id/healthpage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/dip_10"
+            android:textSize="@dimen/fond_18sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginRight="@dimen/dip_10"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dip_10">
+        <TextView
+         android:id="@+id/healthpage_Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -24,15 +45,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/profile_image"
                 android:layout_width="@dimen/dip_30"
                 android:layout_height="@dimen/dip_30"
-                android:src="@mipmap/icon_hader"
                 app:civ_border_color="#FF000000"
                 app:civ_border_width="0dp" />
 
             <TextView
+                android:id="@+id/healthpage_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -41,6 +63,7 @@
                 android:text="萌萌" />
 
             <TextView
+                android:id="@+id/healthpage_comments"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -48,7 +71,7 @@
                 android:layout_toLeftOf="@+id/healthpage_detailskan"
                 android:drawableLeft="@mipmap/icon_lun"
                 android:drawablePadding="@dimen/dip_5"
-                android:text="543" />
+                android:text="0" />
 
             <TextView
                 android:id="@+id/healthpage_detailskan"
@@ -58,20 +81,22 @@
                 android:layout_centerVertical="true"
                 android:drawableLeft="@mipmap/icon_ka"
                 android:drawablePadding="@dimen/dip_5"
-                android:text="543" />
+                android:text="0" />
         </RelativeLayout>
 
         <TextView
+            android:id="@+id/healthpage_context"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/dip_5"
             android:text="中国吃在在在寺地脍仍需仍需仍需仍需仍需你feqe坎坷qwefqwefqwefqwef锊qwef仍需釜qwef地" />
 
         <ImageView
+            android:id="@+id/healthpage_haderImg"
             android:layout_width="match_parent"
+            android:scaleType="fitXY"
             android:layout_height="@dimen/dip_140"
-            android:background="@mipmap/icon_xxx" />
-
+            />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -93,7 +118,14 @@
                 android:drawablePadding="@dimen/dip_5"
                 android:text="我的回答..." />
         </RelativeLayout>
+    </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -109,8 +141,8 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_marginTop="@dimen/dip_10"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
                 android:orientation="horizontal">
 
                 <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -179,9 +211,9 @@
         </RelativeLayout>
 
         <TextView
-            android:layout_marginTop="@dimen/dip_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_5"
             android:text="d在 脍会仍需仍需仍需仍需仍需仍需仍需仍需会仍需仍需仍需会"
             android:textSize="@dimen/fond_14sp" />
 
@@ -192,8 +224,8 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_marginTop="@dimen/dip_10"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip_10"
                 android:orientation="horizontal">
 
                 <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -264,8 +296,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dip_5"
             android:layout_marginLeft="@dimen/dip_40"
+            android:layout_marginTop="@dimen/dip_5"
             android:text="d在 脍会仍需仍需仍需仍需仍需仍需仍需仍需会仍需仍需仍需会"
             android:textSize="@dimen/fond_14sp" />
 
@@ -279,10 +311,9 @@
             android:text="更多评论" />
 
         <ImageView
-            android:layout_marginTop="@dimen/dip_10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_10"
             android:background="@mipmap/icon_zwt" />
-
     </LinearLayout>
-</ScrollView>
+</LinearLayout>

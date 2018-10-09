@@ -73,7 +73,6 @@ public class Act_Problem extends BaseAct implements AdapterView.OnItemClickListe
     private TextView title, tVcontext;
     private List<ProblemImgBean> datas = new ArrayList<>();
     private int indext;
-
     @Override
     public int initLayoutId() {
         return R.layout.act_problem;
@@ -156,8 +155,6 @@ public class Act_Problem extends BaseAct implements AdapterView.OnItemClickListe
         photo.show();
         tvPo = position;
     }
-
-
     /**
      * 咨询菜单获取
      */

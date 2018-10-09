@@ -125,6 +125,7 @@ public class Act_GrowthConsultation extends BaseAct implements HealthPageListAda
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
             }
+
             @Override
             public void afterTextChanged(Editable s) {
                 datass.clear();
@@ -168,7 +169,7 @@ public class Act_GrowthConsultation extends BaseAct implements HealthPageListAda
                 break;
             case R.id.growThconsulTation_newest://最新
                 orderby = "create";
-                keywords="";
+                keywords = "";
                 newest.setTextColor(getResources().getColor(R.color.fond_cloer));
                 hottest.setTextColor(getResources().getColor(R.color.gray));
                 hottest.setTextColor(getResources().getColor(R.color.gray));
@@ -177,7 +178,7 @@ public class Act_GrowthConsultation extends BaseAct implements HealthPageListAda
                 break;
             case R.id.growThconsulTation_Hottest://最热
                 orderby = "hits";
-                keywords="";
+                keywords = "";
                 newest.setTextColor(getResources().getColor(R.color.gray));
                 hottest.setTextColor(getResources().getColor(R.color.fond_cloer));
                 review.setTextColor(getResources().getColor(R.color.gray));
@@ -186,7 +187,7 @@ public class Act_GrowthConsultation extends BaseAct implements HealthPageListAda
                 break;
             case R.id.growThconsulTation_hot_review://热评
                 orderby = "comments";
-                keywords="";
+                keywords = "";
                 newest.setTextColor(getResources().getColor(R.color.gray));
                 hottest.setTextColor(getResources().getColor(R.color.gray));
                 review.setTextColor(getResources().getColor(R.color.fond_cloer));
@@ -201,8 +202,12 @@ public class Act_GrowthConsultation extends BaseAct implements HealthPageListAda
 
     @Override
     public void clickView(View view, int position) {
-        startAct(Act_HealthPage_Details.class);
+        Intent intent = new Intent();
+        intent.putExtra("aid", datass.get(position).getAid());
+        intent.putExtra("title", getIntent().getStringExtra("title"));
+        startAct(intent, Act_HealthPage_Details.class);
     }
+
     /**
      * 成长资讯列表
      */
@@ -210,6 +215,7 @@ public class Act_GrowthConsultation extends BaseAct implements HealthPageListAda
     List<HealthPagerListBean.DataBean> datass = new ArrayList<>();
     private HealthPageListAdapter healthpageAdapter = null;
     HttpReqest httpReqest = new HttpReqest();
+
     public void postLin() {
         mSVProgressHUD.showWithStatus("请稍后...");
         HashMap<String, String> hashMap = new HashMap<>();
@@ -218,12 +224,10 @@ public class Act_GrowthConsultation extends BaseAct implements HealthPageListAda
         hashMap.put("cate_id", cate_id);
         hashMap.put("orderby", orderby);
         hashMap.put("keywords", keywords);
-        Debug.e("-----orderby-------" + orderby);
         httpReqest.HttpPost(ComantUtils.Basning_ted_grow_news_List_Url, hashMap, new BackString() {
             @Override
             public void onSuccess(Response<String> response) {
                 mSVProgressHUD.dismiss();
-                Debug.e("----onSuccess-----" + response.body());
                 HealthPagerListBean bean = gson.fromJson(response.body(), HealthPagerListBean.class);
                 for (int i = 0; i < bean.getData().size(); i++) {
                     HealthPagerListBean.DataBean listBean = bean.getData().get(i);
@@ -262,15 +266,19 @@ public class Act_GrowthConsultation extends BaseAct implements HealthPageListAda
             }
         });
     }
+
     @Override
     public void onLoadingMore(View yourFooterView) {
     }
+
     @Override
     public void onLoadMoreComplete(View yourFooterView) {
     }
+
     @Override
     public void onSetNoMore(View yourFooterView, boolean noMore) {
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

@@ -88,7 +88,6 @@ public class HttpReqest {
 
             @Override
             public void onError(Response<String> response) {
-
                 onBack.onSuccess(response);
             }
         });
