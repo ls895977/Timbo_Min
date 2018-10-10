@@ -43,6 +43,7 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -66,6 +67,7 @@ public class Act_I_Know extends BaseAct implements AdapterView.OnItemClickListen
     private RxPermissions rxPermissions;
     public SVProgressHUD mSVProgressHUD;
     private HttpReqest httpReqest;
+    private String cate_id;
 
     @Override
     public int initLayoutId() {
@@ -93,6 +95,7 @@ public class Act_I_Know extends BaseAct implements AdapterView.OnItemClickListen
 
     @Override
     public void initData() {
+        cate_id = getIntent().getStringExtra("cate_id");
         gson = new Gson();
         httpReqest = new HttpReqest();
         mSVProgressHUD = new SVProgressHUD(this);
@@ -137,15 +140,22 @@ public class Act_I_Know extends BaseAct implements AdapterView.OnItemClickListen
                     MyToast.show(context, "请输入您回答的内容！");
                     return;
                 }
-
-
+                subMit();
                 break;
         }
     }
 
     @Override
     public void onBackImgShut(int position) {
-
+        Carmer_file.remove(position);
+        if (Carmer_file.get(Carmer_file.size() - 1).getPath().equals("")) {
+        } else {
+            if (Carmer_file.size() < 8) {
+                File file1 = new File("");
+                Carmer_file.add(file1);
+            }
+        }
+        adapter.notifyDataSetChanged();
     }
 
     @Override
@@ -327,4 +337,33 @@ public class Act_I_Know extends BaseAct implements AdapterView.OnItemClickListen
         }
     };
 
+    /**
+     * 提交数据
+     */
+
+    public void subMit() {
+        mSVProgressHUD.showWithStatus("提交中...");
+        HashMap<String, String> body = new HashMap<>();
+        body.put("user_token", aCache.getAsString("User_token"));
+        body.put("grow_news_img", gson.toJson(datas));
+        body.put("skill_id", "1");
+        body.put("module", "2");
+        body.put("content", answer.getText().toString());
+        httpReqest.HttpPost(ComantUtils.Growth_Advisory_release, body, new BackString() {
+            @Override
+            public void onSuccess(Response<String> response) {
+                if (response.body().contains("200")) {
+                    MyToast.show(context, "提交成功！");
+                    finish();
+                }
+                mSVProgressHUD.dismiss();
+            }
+
+            @Override
+            public void onError(Response<String> response) {
+                mSVProgressHUD.dismiss();
+            }
+        });
+
+    }
 }

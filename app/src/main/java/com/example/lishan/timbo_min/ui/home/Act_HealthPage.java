@@ -165,7 +165,6 @@ public class Act_HealthPage extends BaseAct implements AdapterView.OnItemClickLi
      * 咨询菜单获取
      */
     HealthpageGridAdagper adagper;
-
     public void postMenu() {
         HashMap<String, String> hashMap = new HashMap<>();
         httpReqest.HttpPost(ComantUtils.Basning_ted_grow_news_Url, hashMap, new BackString() {
@@ -200,7 +199,6 @@ public class Act_HealthPage extends BaseAct implements AdapterView.OnItemClickLi
     private int page = 1;
     List<HealthPagerListBean.DataBean> datass = new ArrayList<>();
     private HealthPageListAdapter healthpageAdapter = null;
-
     public void postLin() {
         mSVProgressHUD.showWithStatus("请稍后...");
         HashMap<String, String> hashMap = new HashMap<>();
@@ -227,7 +225,6 @@ public class Act_HealthPage extends BaseAct implements AdapterView.OnItemClickLi
                 showCView();
                 mSVProgressHUD.dismiss();
             }
-
             @Override
             public void onError(Response<String> response) {
                 List<HealthPagerListBean.DataBean> datass = new ArrayList<>();

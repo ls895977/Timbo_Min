@@ -21,19 +21,21 @@ public class ComantUtils {
     //    public static String MyUrl="http://xiaoshuteng.cn/app/index.php?";
     public static String SignInUrl = "i=1&c=entry&do=signin&m=ted_users";
     /**
-     *  成长资讯分类
+     * 成长资讯分类
      */
     public static String Basning_ted_grow_news_Url = "i=1&c=entry&do=category&m=ted_grow_news";
     /**
-     *  成长资讯列表
+     * 成长资讯列表
      */
     public static String Basning_ted_grow_news_List_Url = "i=1&c=entry&do=list&m=ted_grow_news";
     /**
      * 成长咨询详情
      */
-    public static String Details_Growth="i=1&c=entry&do=detail&m=ted_grow_news";
-
-
+    public static String Details_Growth = "i=1&c=entry&do=detail&m=ted_grow_news";
+    /**
+     * 发布成长资讯
+     */
+    public static String Growth_Advisory_release = "i=6&c=entry&m=dxf_skill&do=write&op=comment";
 
     public static int PAGE_ID = 0;
     public static int Addr_Stats = 10;
@@ -71,23 +73,23 @@ public class ComantUtils {
         return bitmap;
     }
 
-    public static String getFilePath(final Context context, final Uri uri ) {
-        if ( null == uri ) return null;
+    public static String getFilePath(final Context context, final Uri uri) {
+        if (null == uri) return null;
 
         final String scheme = uri.getScheme();
         String data = null;
 
-        if ( scheme == null )
+        if (scheme == null)
             data = uri.getPath();
-        else if ( ContentResolver.SCHEME_FILE.equals( scheme ) ) {
+        else if (ContentResolver.SCHEME_FILE.equals(scheme)) {
             data = uri.getPath();
-        } else if ( ContentResolver.SCHEME_CONTENT.equals( scheme ) ) {
-            Cursor cursor = context.getContentResolver().query( uri, new String[] { MediaStore.Images.ImageColumns.DATA }, null, null, null );
-            if ( null != cursor ) {
-                if ( cursor.moveToFirst() ) {
-                    int index = cursor.getColumnIndex( MediaStore.Images.ImageColumns.DATA );
-                    if ( index > -1 ) {
-                        data = cursor.getString( index );
+        } else if (ContentResolver.SCHEME_CONTENT.equals(scheme)) {
+            Cursor cursor = context.getContentResolver().query(uri, new String[]{MediaStore.Images.ImageColumns.DATA}, null, null, null);
+            if (null != cursor) {
+                if (cursor.moveToFirst()) {
+                    int index = cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA);
+                    if (index > -1) {
+                        data = cursor.getString(index);
                     }
                 }
                 cursor.close();
@@ -95,6 +97,7 @@ public class ComantUtils {
         }
         return data;
     }
+
     /**
      * 转成文本，去掉引号
      */

@@ -205,6 +205,7 @@ public class Act_GrowthConsultation extends BaseAct implements HealthPageListAda
         Intent intent = new Intent();
         intent.putExtra("aid", datass.get(position).getAid());
         intent.putExtra("title", getIntent().getStringExtra("title"));
+        intent.putExtra("cate_id", datass.get(position).getCate_id());
         startAct(intent, Act_HealthPage_Details.class);
     }
 
