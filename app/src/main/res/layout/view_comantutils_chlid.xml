@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_comantutils_chlid_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip_5"
+        android:drawableLeft="@mipmap/icon_jia"
+        android:drawablePadding="@dimen/dip_5"
+        android:text="最佳答案"
+        android:textColor="@color/main_color"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip_10"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/view_comantutils_chlid_hader"
+                android:layout_width="@dimen/dip_30"
+                android:layout_height="@dimen/dip_30"
+                android:layout_gravity="center_vertical"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="0dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/view_comantutils_chlid_nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="蒙受欧"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_14sp" />
+
+                <TextView
+                    android:id="@+id/view_comantutils_chlid_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="蒙欧"
+                    android:textColor="@color/fond_cloer"
+                    android:textSize="@dimen/fond_14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/view_comantutils_chlid_praise_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dip_5"
+                android:text="0"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/fond_12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dip_5"
+                android:src="@mipmap/icon_zan" />
+
+            <ImageView
+                android:id="@+id/chlid_Message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dip_5"
+                android:src="@mipmap/icon_mesage" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/view_comantutils_chlid_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip_5"
+        android:text="d在 脍会仍需仍需仍需仍需仍需仍需仍需仍需会仍需仍需仍需会"
+        android:textSize="@dimen/fond_14sp" />
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:paddingLeft="@dimen/dip_40"
+        android:id="@+id/healthpage_Chlid_XRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

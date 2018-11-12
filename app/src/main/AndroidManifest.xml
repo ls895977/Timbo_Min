@@ -23,6 +23,7 @@
     <uses-permission
         android:name="android.permission.WRITE_SETTINGS"
         tools:ignore="ProtectedPermissions" />
+
     <application
         android:name=".common.MyApplication"
         android:allowBackup="true"
@@ -32,11 +33,12 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ui.Act_WelcomePage"></activity>
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".ui.Act_Login">
-        </activity>
+        <activity android:name=".ui.Act_Login"></activity>
+
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="Ri0UfUWFU97nPeSvUEG12E084c6j7GLM" />
+
         <activity android:name=".ui.Act_ForgotPassword" />
         <activity android:name=".ui.Act_Register" />
         <activity android:name=".ui.Act_RG_Perfect_information" />
@@ -45,15 +47,17 @@
         <activity android:name=".ui.home.Act_HealthPage" />
         <activity android:name=".ui.home.Act_GrowthConsultation" />
         <activity android:name=".ui.home.Act_Problem" />
-        <activity android:name=".ui.home.Act_HealthPage_Details" />
+        <activity
+            android:name=".ui.home.Act_HealthPage_Details"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity android:name=".ui.home.Act_More" />
         <activity android:name=".ui.home.Act_I_Know" />
         <activity android:name=".ui.home.growth.Act_MyGrowth" />
         <activity android:name=".ui.home.growth.Act_GrowthRecord_Details" />
         <activity android:name=".ui.home.growth.Act_MyEssayDetails" />
-        <activity android:name=".ui.home.growth.Act_Comment_Details"
-            android:windowSoftInputMode="adjustPan|stateHidden"
-            />
+        <activity
+            android:name=".ui.home.growth.Act_Comment_Details"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity android:name=".ui.home.growth.Act_Picture_Browsing" />
         <activity android:name=".ui.home.motion.Act_MyMovem" />
         <activity android:name=".ui.home.motion.Act_Sign" />
@@ -87,27 +91,26 @@
         <activity android:name=".ui.home.traininginstitutions.Act_TrainingInstitutionsHome" />
         <activity android:name=".ui.home.basningskills.Act_Vote" />
         <activity android:name=".ui.home.basningskills.Act_VotingDetails" />
-        <activity android:name=".ui.member.Act_Integral"/>
-        <activity android:name=".ui.member.Act_Imazamox"/>
-        <activity android:name=".ui.member.Act_ExtractionOfGoldBean"/>
-        <activity android:name=".ui.member.Act_Rechargeofgoldbean"/>
-        <activity android:name=".ui.member.Act_SignIn"/>
-        <activity android:name=".ui.member.Act_Follow"/>
-        <activity android:name=".ui.member.Act_MyRecord"/>
-        <activity android:name=".ui.member.Act_ActivityRecord"/>
-        <activity android:name=".ui.member.Act_MyPK"/>
-        <activity android:name=".ui.member.Act_Skill"/>
-        <activity android:name=".ui.member.Act_Collection"/>
-        <activity android:name=".ui.member.Act_Classroom"/>
-        <activity android:name=".ui.member.Act_Parent"/>
-        <activity android:name=".ui.member.Act_PersonalData"/>
-        <activity android:name=".ui.member.Act_TeacherClass"/>
-        <activity android:name=".ui.member.Act_MyTeacher1"/>
-        <activity android:name=".ui.enterprise.Act_EnterpriseInformation"/>
-        <activity android:name=".ui.Act_RegistrationSelection"/>
-        <activity android:name=".ui.member.Act_Coupons"/>
-        <activity android:name=".MyWeb">
-        </activity>
+        <activity android:name=".ui.member.Act_Integral" />
+        <activity android:name=".ui.member.Act_Imazamox" />
+        <activity android:name=".ui.member.Act_ExtractionOfGoldBean" />
+        <activity android:name=".ui.member.Act_Rechargeofgoldbean" />
+        <activity android:name=".ui.member.Act_SignIn" />
+        <activity android:name=".ui.member.Act_Follow" />
+        <activity android:name=".ui.member.Act_MyRecord" />
+        <activity android:name=".ui.member.Act_ActivityRecord" />
+        <activity android:name=".ui.member.Act_MyPK" />
+        <activity android:name=".ui.member.Act_Skill" />
+        <activity android:name=".ui.member.Act_Collection" />
+        <activity android:name=".ui.member.Act_Classroom" />
+        <activity android:name=".ui.member.Act_Parent" />
+        <activity android:name=".ui.member.Act_PersonalData" />
+        <activity android:name=".ui.member.Act_TeacherClass" />
+        <activity android:name=".ui.member.Act_MyTeacher1" />
+        <activity android:name=".ui.enterprise.Act_EnterpriseInformation" />
+        <activity android:name=".ui.Act_RegistrationSelection" />
+        <activity android:name=".ui.member.Act_Coupons" />
+        <activity android:name=".MyWeb"></activity>
         <activity android:name=".ui.Act_Loding">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -115,13 +118,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.Act_Welcome">
-        </activity>
-        <activity android:name=".ui.MyWebView"/>
+        <activity android:name=".ui.Act_Welcome"></activity>
+        <activity android:name=".ui.MyWebView" />
         <activity android:name=".ui.home.traininginstitutions.Act_Enroll" />
         <activity android:name=".ui.member.Act_MyTeacher" />
-        <activity android:name=".ui.MyWebView"
+        <activity
+            android:name=".ui.MyWebView"
             tools:ignore="DuplicateActivity" />
+
         <service
             android:name="com.baidu.trace.LBSTraceService"
             android:enabled="true"

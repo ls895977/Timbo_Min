@@ -1,319 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/dip_20">
-
-        <ImageView
-            android:id="@+id/healthpage_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/dip_10"
-            android:src="@mipmap/icon_hui" />
-
-        <TextView
-            android:id="@+id/healthpage_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:paddingTop="@dimen/dip_10"
-            android:textSize="@dimen/fond_18sp" />
-    </RelativeLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/dip_10"
-        android:layout_marginRight="@dimen/dip_10"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/dip_10">
-        <TextView
-         android:id="@+id/healthpage_Title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:padding="@dimen/dip_10"
-            android:text="樱桃吃多了会上火么"
-            android:textColor="@color/fond_cloer"
-            android:textSize="@dimen/fond_16sp" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/profile_image"
-                android:layout_width="@dimen/dip_30"
-                android:layout_height="@dimen/dip_30"
-                app:civ_border_color="#FF000000"
-                app:civ_border_width="0dp" />
-
-            <TextView
-                android:id="@+id/healthpage_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/dip_5"
-                android:layout_toRightOf="@+id/profile_image"
-                android:text="萌萌" />
-
-            <TextView
-                android:id="@+id/healthpage_comments"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/dip_5"
-                android:layout_toLeftOf="@+id/healthpage_detailskan"
-                android:drawableLeft="@mipmap/icon_lun"
-                android:drawablePadding="@dimen/dip_5"
-                android:text="0" />
-
-            <TextView
-                android:id="@+id/healthpage_detailskan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:drawableLeft="@mipmap/icon_ka"
-                android:drawablePadding="@dimen/dip_5"
-                android:text="0" />
-        </RelativeLayout>
-
-        <TextView
-            android:id="@+id/healthpage_context"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/dip_5"
-            android:text="中国吃在在在寺地脍仍需仍需仍需仍需仍需你feqe坎坷qwefqwefqwefqwef锊qwef仍需釜qwef地" />
-
-        <ImageView
-            android:id="@+id/healthpage_haderImg"
-            android:layout_width="match_parent"
-            android:scaleType="fitXY"
-            android:layout_height="@dimen/dip_140"
-            />
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/dip_5"
-                android:layout_marginTop="@dimen/dip_10"
-                android:text="举报" />
-
-            <TextView
-                android:id="@+id/healthpage_details_huida"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:drawablePadding="@dimen/dip_5"
-                android:text="我的回答..." />
-        </RelativeLayout>
-    </LinearLayout>
-
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:visibility="gone">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dip_5"
-            android:drawableLeft="@mipmap/icon_jia"
-            android:drawablePadding="@dimen/dip_5"
-            android:text="最佳答案"
-            android:textColor="@color/main_color" />
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
 
-        <RelativeLayout
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/healthpage_XRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dip_10"
-                android:orientation="horizontal">
-
-                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                    android:layout_width="@dimen/dip_30"
-                    android:layout_height="@dimen/dip_30"
-                    android:layout_gravity="center_vertical"
-                    android:src="@mipmap/icon_hader"
-                    app:civ_border_color="#FF000000"
-                    app:civ_border_width="0dp" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dip_5"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:text="蒙受欧"
-                        android:textColor="@color/fond_cloer"
-                        android:textSize="@dimen/fond_14sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:text="蒙欧"
-                        android:textColor="@color/fond_cloer"
-                        android:textSize="@dimen/fond_14sp" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="@dimen/dip_5"
-                    android:text="1205"
-                    android:textColor="@color/gray"
-                    android:textSize="@dimen/fond_12sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="@dimen/dip_5"
-                    android:src="@mipmap/icon_zan" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="@dimen/dip_5"
-                    android:src="@mipmap/icon_mesage" />
-            </LinearLayout>
-        </RelativeLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dip_5"
-            android:text="d在 脍会仍需仍需仍需仍需仍需仍需仍需仍需会仍需仍需仍需会"
-            android:textSize="@dimen/fond_14sp" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dip_40">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dip_10"
-                android:orientation="horizontal">
-
-                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                    android:layout_width="@dimen/dip_30"
-                    android:layout_height="@dimen/dip_30"
-                    android:layout_gravity="center_vertical"
-                    android:src="@mipmap/icon_hader"
-                    app:civ_border_color="#FF000000"
-                    app:civ_border_width="0dp" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dip_5"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:text="蒙受欧"
-                        android:textColor="@color/fond_cloer"
-                        android:textSize="@dimen/fond_14sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:text="蒙欧"
-                        android:textColor="@color/fond_cloer"
-                        android:textSize="@dimen/fond_14sp" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="@dimen/dip_5"
-                    android:text="1205"
-                    android:textColor="@color/gray"
-                    android:textSize="@dimen/fond_12sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="@dimen/dip_5"
-                    android:src="@mipmap/icon_zan" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="@dimen/dip_5"
-                    android:src="@mipmap/icon_mesage" />
-            </LinearLayout>
-        </RelativeLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dip_40"
-            android:layout_marginTop="@dimen/dip_5"
-            android:text="d在 脍会仍需仍需仍需仍需仍需仍需仍需仍需会仍需仍需仍需会"
-            android:textSize="@dimen/fond_14sp" />
-
-        <TextView
-            android:id="@+id/iv_more1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:drawableBottom="@mipmap/icon_geng"
-            android:drawablePadding="@dimen/dip_5"
-            android:text="更多评论" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dip_10"
-            android:background="@mipmap/icon_zwt" />
     </LinearLayout>
-</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/My_MessageSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#80808080" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#FFF"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/My_MessageSend_smail"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_emoji" />
+
+                <EditText
+                    android:id="@+id/My_MessageSend_reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingRight="30dp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/My_MessageSend_send_msg"
+                android:layout_width="50dip"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/bt_growthrecord_details2"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

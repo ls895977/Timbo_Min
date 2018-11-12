@@ -101,6 +101,7 @@ public class Act_Login extends BaseAct {
                 MyToast.show(context, "登录成功！");
                 if (loginBean.getError_code().equals("200")) {
                     startActClear(MainActivity.class);
+                    Debug.e("----User_token-----"+loginBean.getData().getUser_token());
                     aCache.put("User_token",loginBean.getData().getUser_token());
                     aCache.put("uid_type", loginBean.getData().getType());
                     aCache.put("Company_img",loginBean.getData().getCompany_img());

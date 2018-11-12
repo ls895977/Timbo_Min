@@ -158,9 +158,12 @@ public class Act_HealthPage extends BaseAct implements AdapterView.OnItemClickLi
 
     @Override
     public void clickView(View view, int position) {
-        startAct(Act_HealthPage_Details.class);
+        Intent intent = new Intent();
+        intent.putExtra("aid", datass.get(position).getAid());
+        intent.putExtra("title", getIntent().getStringExtra("title"));
+        intent.putExtra("cate_id", datass.get(position).getCate_id());
+        startAct(intent, Act_HealthPage_Details.class);
     }
-
     /**
      * 咨询菜单获取
      */

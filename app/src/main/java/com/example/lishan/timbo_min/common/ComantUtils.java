@@ -36,16 +36,18 @@ public class ComantUtils {
      * 发布成长资讯
      */
     public static String Growth_Advisory_release = "i=6&c=entry&m=dxf_skill&do=write&op=comment";
+    /**
+     * 更多评论（其他模块评论通用）
+     * module
+     * 模块标识
+     * 1.晒技能模块 2.成长资讯
+     * 3.企业活动 4.教育视频 5.随笔评论 6.相册评论  7.PK竞技场
+     */
+    public static String More_Comments = "i=1&c=entry&do=write&m=dxf_skill&op=comt_more";
 
-    public static int PAGE_ID = 0;
-    public static int Addr_Stats = 10;
-    public static int Addr_Result = 5;
-    public static int PHOTO_CAMERA = 1;
-    public static String imagmHadr = "http://zp.wxtah.com/UpLoadFile/image/";
 
     /**
      * URI得到路劲
-     *
      * @param uri
      * @param act
      * @return

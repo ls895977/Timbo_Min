@@ -68,6 +68,7 @@ public class Act_I_Know extends BaseAct implements AdapterView.OnItemClickListen
     public SVProgressHUD mSVProgressHUD;
     private HttpReqest httpReqest;
     private String cate_id;
+    private String aid;
 
     @Override
     public int initLayoutId() {
@@ -87,6 +88,7 @@ public class Act_I_Know extends BaseAct implements AdapterView.OnItemClickListen
         answer = getView(R.id.IKnow_Answer);
         setOnClickListener(R.id.i_know_problem);
         rxPermissions = new RxPermissions(this);
+        aid = getIntent().getStringExtra("aid");
     }
 
     private BusinessShopGridAdapter adapter;
@@ -270,7 +272,6 @@ public class Act_I_Know extends BaseAct implements AdapterView.OnItemClickListen
      * 返回结果做图片压缩
      */
     File lubanFile;
-
     public void backCarme(File file) {
 //新建一个File，传入文件夹目录
         File file1 = new File(Environment.getExternalStorageDirectory(), "mywork");
@@ -340,13 +341,12 @@ public class Act_I_Know extends BaseAct implements AdapterView.OnItemClickListen
     /**
      * 提交数据
      */
-
     public void subMit() {
         mSVProgressHUD.showWithStatus("提交中...");
         HashMap<String, String> body = new HashMap<>();
         body.put("user_token", aCache.getAsString("User_token"));
         body.put("grow_news_img", gson.toJson(datas));
-        body.put("skill_id", "1");
+        body.put("skill_id", aid);
         body.put("module", "2");
         body.put("content", answer.getText().toString());
         httpReqest.HttpPost(ComantUtils.Growth_Advisory_release, body, new BackString() {
@@ -354,9 +354,11 @@ public class Act_I_Know extends BaseAct implements AdapterView.OnItemClickListen
             public void onSuccess(Response<String> response) {
                 if (response.body().contains("200")) {
                     MyToast.show(context, "提交成功！");
+                    setResult(10);
                     finish();
                 }
                 mSVProgressHUD.dismiss();
+
             }
 
             @Override
@@ -364,6 +366,5 @@ public class Act_I_Know extends BaseAct implements AdapterView.OnItemClickListen
                 mSVProgressHUD.dismiss();
             }
         });
-
     }
 }
